@@ -4,10 +4,12 @@
     background-color: #333;
     overflow: hidden;
     text-align: center; 
+    position: sticky; 
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
+    position: sticky; 
     display: inline-block;
     color: #f2f2f2;
     text-align: center;

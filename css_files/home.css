@@ -1,0 +1,25 @@
+.body {
+    
+    font-family: candara; 
+}
+
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    background-color: #eceff1; 
+}
+
+img {
+    max-width:  80%;
+    max-height: auto;
+    padding: 15px 15px; 
+}
+
+.text {
+    font-size: 20;
+    letter-spacing: .2px;
+    line-height: 1.5;
+    font-family: candara; 
+}
