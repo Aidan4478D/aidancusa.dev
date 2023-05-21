@@ -2,7 +2,9 @@
     
     <body>
         <link rel = "stylesheet" href="../css_files/nav_bar.css" />
-
+        <link rel = "stylesheet" href="../css_files/about.css" />
+    
+        <! navbar with about as active tab >
         <div class="topnav">
             <a href="index.html">Home</a>
             <a href="about.html" class="active">About Me</a>
@@ -11,12 +13,19 @@
         </div>
         <hr> 
 
-        <video width="auto" height="250px" autoplay muted>
-            <source src="../videos/natm_finals_3.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <! natm video playing as background in a container>
+        <div class="container-video">
+            <video height="auto" style="opacity: 0.5" autoplay muted loop>
+                <source src="../videos/shrt_crop_natm_f3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay">
+                <h1 id = "top_text">About Me</h1>
+            </div>
+        </div>
+        <hr>
 
-        <h1> About me </h1>
+        <h1> About Me </h1>
 
     </body>
 </html>

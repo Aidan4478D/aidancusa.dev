@@ -1,19 +1,17 @@
 body {
-    
     font-family: candara; 
 }
 
 .container-top {
-    
     display: grid;
     align-items: center; 
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    padding-right: 20px; 
     column-gap: 5px;
     background-color: #eceff1; 
 }
 
 .container-bottom {
-
     display: grid; 
     align-items: center; 
     text-align: center; 
@@ -24,14 +22,12 @@ body {
 }
 
 .image-logo {
-    
-    max-width:  80%;
+    max-width:  70%;
     max-height: auto;
     padding: 20px 20px; 
 }
 
 .image-tags {
-    
     max-width:  80px; 
     max-height: 80px;
     padding: 20px 20px;
@@ -42,14 +38,13 @@ body {
 }
 
 .text {
-
-    font-size: 20;
+    font-size: 2vw;
     letter-spacing: .2px;
     line-height: 1.5;
+    color: #263238;
 }
 
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1500px) {
 
     .container-top {
         padding: 20px 20px; 
@@ -60,4 +55,31 @@ body {
         background-color: #eceff1; 
     }
 
+}
+
+@media screen and (max-width: 400px) {
+
+    .text {
+        font-size: 15px;
+        letter-spacing: .2px;
+        line-height: 1.5;
+        color: #263238;  
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .image-logo {
+        max-width:  60%;
+        max-height: auto;
+        padding-left: 100px;
+        /*padding: 20px 20px; */
+    }
+    .text {
+        font-size: 20px;
+        letter-spacing: .2px;
+        line-height: 1.5;
+        padding-right: 200px;
+        color: #263238;  
+    }
 }

@@ -1,0 +1,54 @@
+body {
+    
+    font-family: candara; 
+}
+
+.container-video { 
+    position:relative;
+    text-align: center;
+    align-items: center; 
+}
+
+.container-video video {
+    width: 100%; 
+    position: relative;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    left: 31%;
+    top: 22%; 
+    z-index: 1;
+}
+
+#top_text {
+    color: #263238;
+    font-size: 8vw;
+    align-self: center;
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .container-video video {
+        width: 70%;
+        position: relative;
+        z-index: 0;
+    }
+    #top_text {
+        color: #263238;
+        font-size: 5vw;
+        align-self: center;
+    }
+    .overlay {
+        position: absolute;
+        left: 38%;
+        top: 22%; 
+        z-index: 1;
+    }
+}
+
+
+
+
