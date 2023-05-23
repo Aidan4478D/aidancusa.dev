@@ -1,17 +1,18 @@
 
 /* Add a black background color to the top navigation */
+
 .topnav {
     background-color: #37474f;
     overflow: hidden;
+    position: relative; 
     text-align: center; 
-    position: sticky; 
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
     position: sticky; 
-    display: inline-block;
     color: #f2f2f2;
+    display: inline-block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -35,13 +36,26 @@
     color: #eceff1;
 }
 
+strong {
+    padding: 14px 16px;
+    font-size: 25px;
+    color: #f2f2f2;
+}
+
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
 @media screen and (max-width: 600px) {
 
-  .topnav a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-  }
+    strong {
+
+        font-size: 20;
+        padding: 10px 5px; 
+    }
+
+    .topnav a {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        padding: 10px 3px; 
+    }
 }
