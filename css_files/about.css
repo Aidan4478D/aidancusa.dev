@@ -25,6 +25,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 2vw;
 }
 
 .overlay {
@@ -85,8 +86,16 @@ figure figcaption{
         padding: 5px 5px; 
         text-align: left;
     }
+    .centered {
+        font-size: 3vw;
+    }
 }
+@media screen and (max-width: 1000px) {
 
+    .centered {
+        font-size: 2.5vw;
+    }
+}
 @media screen and (min-width: 1000px) {
 
     .container-video video {
@@ -117,7 +126,7 @@ figure figcaption{
         width: 80%;
     }
     figure img{
-        height: 250px;
+        height: 225px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 }
