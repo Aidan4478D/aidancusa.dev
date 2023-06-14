@@ -1,7 +1,3 @@
-body {
-    font-family: candara; 
-}
-
 .grid-container {
     display: grid;
     border-top: 1px solid black; 
