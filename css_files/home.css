@@ -61,6 +61,15 @@
         line-height: 1.5;
         color: #263238;  
     }
+    .image-tags {
+        max-width:  35px; 
+        max-height: 35px;
+        padding: 15px 15px;
+    }
+    .container-bottom {
+        margin-left: 2%; 
+        margin-right: 2%;
+    }   
 }
 
 @media screen and (min-width: 1200px) {

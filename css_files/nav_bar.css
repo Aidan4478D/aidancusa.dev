@@ -43,16 +43,16 @@ strong {
 }
 
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
 
     strong {
-
-        font-size: 20;
+        font-size: 15;
         padding: 10px 5px; 
     }
 
     .topnav a {
         position: relative;
+        font-size: 13;
         top: 0;
         left: 0;
         transform: none;
