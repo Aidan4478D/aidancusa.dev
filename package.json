@@ -1,6 +1,7 @@
 {
   "name": "aidancusa.dev",
-  "homepage": "https://Aidan4478D.github.io/aidancusa.dev",
+  "proxy": "https://aidan4478d.github.io/aidancusa.dev/",
+  "homepage": "https://aidan4478d.github.io/aidancusa.dev/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
