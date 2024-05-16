@@ -1,0 +1,79 @@
+
+
+header {
+    background-color: #002F56;
+    color: #fff;
+    width: 100%;
+    max-height: 15vh;
+    display: flex;
+    position: relative;
+    justify-content: center; /* Aligns children (including buttons container) to the center horizontally */
+    align-items: center; /* Aligns children to the center vertically */
+    min-height: 3em;
+    flex-wrap: nowrap;
+}
+
+.buttons-and-name-conatiner {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* This ensures the buttons themselves are centered relative to each other */
+    width: 60%; /* Ensure the container takes up all horizontal space of the header */
+    height: 100%; /* Ensure the container takes up all vertical space of the header */
+    gap: 2em;
+}
+
+
+.header-button-left, .header-button-right {
+    flex-grow: 1; /* Each button will grow evenly to fill the container */
+    display: block;
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    background-color: #002F56;
+    color: white; /* Text color */
+    text-decoration: none;
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 4vh 0; /* Adjust padding to control height */
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.header-button-left:hover, .header-button-right:hover {
+    z-index: 1;
+    color: white;
+}
+
+.header-button-left:after, .header-button-right:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #0059b3;
+    transition: all .35s;
+    color: white;
+    z-index: -1; /* Ensures it's behind the text */
+}
+
+.header-button-left:after {
+    right: 0;
+}
+
+.header-button-right:after {
+    left: 0;
+}
+
+.header-button-left:hover:after, .header-button-right:hover:after {
+    width: 100%;
+    color: white;
+}
+
+header h1 {
+    color: white;
+    cursor: pointer;
+}
