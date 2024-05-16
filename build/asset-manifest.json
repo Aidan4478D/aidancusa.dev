@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/aidancusa.dev/static/css/main.f855e6bc.css",
-    "main.js": "/aidancusa.dev/static/js/main.580dcb12.js",
-    "static/js/453.104dea24.chunk.js": "/aidancusa.dev/static/js/453.104dea24.chunk.js",
-    "index.html": "/aidancusa.dev/index.html",
-    "main.f855e6bc.css.map": "/aidancusa.dev/static/css/main.f855e6bc.css.map",
-    "main.580dcb12.js.map": "/aidancusa.dev/static/js/main.580dcb12.js.map",
-    "453.104dea24.chunk.js.map": "/aidancusa.dev/static/js/453.104dea24.chunk.js.map"
+    "main.css": "/static/css/main.f855e6bc.css",
+    "main.js": "/static/js/main.64fdd736.js",
+    "static/js/453.104dea24.chunk.js": "/static/js/453.104dea24.chunk.js",
+    "index.html": "/index.html",
+    "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
+    "main.64fdd736.js.map": "/static/js/main.64fdd736.js.map",
+    "453.104dea24.chunk.js.map": "/static/js/453.104dea24.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.580dcb12.js"
+    "static/js/main.64fdd736.js"
   ]
 }
