@@ -4,20 +4,18 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 
-import { App } from './App';
+import App from './App';
 //import ProfilePage from "./pages/ProfilePage"
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <UserDetailsProvider>
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<App />} />
         </Routes>
     </BrowserRouter>
-    </UserDetailsProvider>,
 );
 
 // If you want to start measuring performance in your app, pass a function
