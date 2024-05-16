@@ -1,1 +1,3 @@
-Repository for personal website
+## Aidan Cusa's Personal Website
+
+Repository for personal website.
