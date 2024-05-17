@@ -1,0 +1,43 @@
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    height: 300px; /* Set a specific height */
+    width: 100%;
+}
+
+.carousel-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    transition: transform 0.3s;
+}
+
+.carousel-card:hover {
+    transform: scale(0.9);
+}
+
+.carousel-card > img {
+    max-height: 70%;
+    min-width: 90%;
+    opacity: 0.75;
+}
+
+.carousel-track {
+    display: flex;
+    position: absolute;
+    left: 0;
+    justify-content: start; /* Changed from center to start */
+    align-items: center;
+    gap: 10px;
+    width: 200%;
+    height: 100%;
+    animation: slide 45s linear infinite;
+}
+
+@keyframes slide {
+    from { left: 0; }
+    to { left: -213%; }
+}
+
