@@ -1,14 +1,16 @@
 import React from 'react';
 //import '../styles/LandingPage.css';
-import Header from '../components/Header.js'
-import Footer from '../components/Footer.js'
+import Header from '../components/general/Header.js'
+import Footer from '../components/general/Footer.js'
+
+import AboutBody from '../components/about/AboutBody.js'
 
 
 const AboutPage = () => {
     return (
         <div>
             <Header />
-            <h1> About Page </h1>
+            <AboutBody />
             <Footer />
         </div>
     );

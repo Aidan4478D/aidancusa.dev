@@ -1,21 +1,26 @@
 import React, { useEffect, useState, useRef } from 'react';
-import '../styles/FadeInSection.css'
+import '../styles/FadeInSection.css';
 
-
-export default function FadeInSection(props) {
-    const [isVisible, setVisible] = useState(false); // Start with false if you want the fade effect on initial visibility
-    const domRef = useRef();
+function FadeInSection(props) {
+    const [isVisible, setVisible] = useState(false);
+    const domRef = useRef(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
-            // In most cases, you'll be observing a single entry
-            const entry = entries[0];
-            setVisible(entry.isIntersecting);
+            entries.forEach(entry => setVisible(entry.isIntersecting));
         });
 
-        observer.observe(domRef.current);
+        // Ensure the element is there to be observed
+        if (domRef.current) {
+            observer.observe(domRef.current);
+        }
 
-        return () => observer.unobserve(domRef.current);
+        // Cleanup function
+        return () => {
+            if (domRef.current) {
+                observer.unobserve(domRef.current);
+            }
+        };
     }, []);
 
     return (
@@ -27,3 +32,5 @@ export default function FadeInSection(props) {
         </div>
     );
 }
+
+export default FadeInSection;

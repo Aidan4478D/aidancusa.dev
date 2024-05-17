@@ -1,0 +1,31 @@
+.container-video {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    display: flex; /* Use flexbox to help with centering */
+    justify-content: center; /* Center horizontally */
+    height: auto; /* Adjust height as necessary */
+}
+
+.container-video video {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    position: relative;
+    z-index: 0;
+    opacity: 0.5; /* Lower the opacity to allow text to stand out */
+}
+
+.overlay {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center the overlay */
+    z-index: 1;
+    color: white; /* Ensure the text color contrasts well with the video */
+    color: #002f56;
+}
+
+#top_text {
+    font-size: 7vw;
+    align-self: center;
+}
