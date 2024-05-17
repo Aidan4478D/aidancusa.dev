@@ -1,0 +1,26 @@
+.socials-container {
+    overflow: hidden;
+    position: relative;
+    height: 250px; /* Set a specific height */
+    width: 100%;
+    display: flex; /* Using flexbox to align children side by side */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 20px 0;
+    flex-direction: row; /* Change to row to align children horizontally */
+    flex-wrap: wrap; /* Allows items to wrap in case of space constraints */
+}
+
+.socials-container img {
+    height: auto; /* Adjust height to be automatic */
+    width: auto; /* Adjust width to be automatic */
+    max-height: 45%; /* Restrict maximum height */
+    margin: 0 5vw; /* Add horizontal margin and remove vertical margin */
+    transition: transform 0.3s;
+}
+
+.socials-container img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+

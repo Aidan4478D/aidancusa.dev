@@ -1,8 +1,9 @@
 import React from 'react';
 import '../styles/LandingPage.css';
 import Header from '../components/Header.js'
-import Intro from '../components/Intro.js'
 import AutoplayCarousel from '../components/carousel/AutoplayCarousel'
+import Intro from '../components/Intro.js'
+import Socials from '../components/Socials.js'
 
 
 const LandingPage = () => {
@@ -11,6 +12,7 @@ const LandingPage = () => {
             <Header />
             <AutoplayCarousel />
             <Intro />
+            <Socials />
         </div>
     );
 }
