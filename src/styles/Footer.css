@@ -1,0 +1,47 @@
+footer {
+    background-color: #002F56;
+    color: #fff;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    position: relative;
+    justify-content: center; /* Aligns children (including buttons container) to the center horizontally */
+    align-items: center; /* Aligns children to the center vertically */
+    min-height: 100%;
+}
+
+.footer-conatiner-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* This ensures the buttons themselves are centered relative to each other */
+    width: 60%; /* Ensure the container takes up all horizontal space of the header */
+    min-height: 100%; /* Ensure the container takes up all vertical space of the header */
+    gap: 2em;
+    margin-right: auto;
+}
+
+.footer-container-text {
+    font-size: 1em;
+    color: white;
+    margin-right: 10%;
+}
+
+.footer-link {
+    font-size: 1em;
+    color: white;
+}
+
+.footer-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+
+    footer {
+        flex-direction: column;  /* Horizontal alignment for navigation links */
+        justify-content: center; /* Aligns children (including buttons container) to the center horizontally */
+        align-items: center; /* Aligns children to the center vertically */
+        width: 100%;  /* Restrict width to 60% */
+    }
+}

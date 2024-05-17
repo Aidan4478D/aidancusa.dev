@@ -1,10 +1,7 @@
 import React from 'react';
 import '../styles/Socials.css';
-import { useNavigate } from "react-router-dom"
 
 const Socials = () => {
-
-    const navigate = useNavigate();
 
     const handleNavigate = (url) => {
         window.open(url, "_blank"); // "_blank" opens a new tab

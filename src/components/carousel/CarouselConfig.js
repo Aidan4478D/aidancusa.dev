@@ -6,7 +6,7 @@ export const cardDetails = {
 
     1: {
         imgUrl: "/carousel/ktown-squidgames.jpg",
-        title: "Picture with Squidgames"
+        title: "Me with Squidgames"
     },
 
     2: {

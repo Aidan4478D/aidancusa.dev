@@ -14,7 +14,7 @@
 .socials-container img {
     height: auto; /* Adjust height to be automatic */
     width: auto; /* Adjust width to be automatic */
-    max-height: 45%; /* Restrict maximum height */
+    max-height: 40%; /* Restrict maximum height */
     margin: 0 5vw; /* Add horizontal margin and remove vertical margin */
     transition: transform 0.3s;
 }
@@ -22,5 +22,13 @@
 .socials-container img:hover {
     cursor: pointer;
     transform: scale(1.2);
+}
+
+
+@media (max-width: 800px) {
+
+    .intro-container img {
+        max-height: 20%; /* Restrict maximum height */
+    }
 }
 

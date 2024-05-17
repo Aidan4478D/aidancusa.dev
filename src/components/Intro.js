@@ -5,7 +5,7 @@ const Intro = () => {
 
     return (
         <div className="intro-container">
-            <img src="/intro-pic.png" alt="Introduction Paragraph Picture" />
+            <img src="/intro-pic-light-blue.png" alt="Introduction Paragraph Pic" />
 
             <div className = "intro-text-container">
                 <h1> Hi I'm Aidan! </h1>
