@@ -4,13 +4,12 @@ header {
     background-color: #002F56;
     color: #fff;
     width: 100%;
-    max-height: 12vh;
-    min-height: 10vh;
+    height: 10vh;
     display: flex;
     position: relative;
     justify-content: center; /* Aligns children (including buttons container) to the center horizontally */
     align-items: center; /* Aligns children to the center vertically */
-    min-height: 4vh;
+    min-height: 100%;
     flex-wrap: nowrap;
 }
 
@@ -19,14 +18,13 @@ header {
     align-items: center;
     justify-content: center; /* This ensures the buttons themselves are centered relative to each other */
     width: 60%; /* Ensure the container takes up all horizontal space of the header */
-    height: 100%; /* Ensure the container takes up all vertical space of the header */
+    min-height: 100%; /* Ensure the container takes up all vertical space of the header */
     gap: 2em;
 }
 
 
 .header-button-left, .header-button-right {
     flex-grow: 1; /* Each button will grow evenly to fill the container */
-    display: block;
     display: flex;
     justify-content: center; /* Center text horizontally */
     align-items: center; /* Center text vertically */
@@ -37,11 +35,12 @@ header {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 4vh 0; /* Adjust padding to control height */
+    padding: 0;
     letter-spacing: 2px;
     text-align: center;
     position: relative;
     transition: all .35s;
+    height: 10vh;
 }
 
 .header-button-left:hover, .header-button-right:hover {
@@ -78,4 +77,5 @@ header h1 {
     font-size: 1.5em;
     color: white;
     cursor: pointer;
+    text-wrap: nowrap;
 }

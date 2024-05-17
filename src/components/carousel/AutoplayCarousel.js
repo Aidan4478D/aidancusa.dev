@@ -19,6 +19,7 @@ export default function AutoplayCarousel() {
 
     return (
         <div className="carousel-container">
+            {/*<h1> Can Put Text Here </h1>*/}
             <div className="carousel-track">
                 {extendedCardDetails.map((item, index) => (
                     <CarouselItem
