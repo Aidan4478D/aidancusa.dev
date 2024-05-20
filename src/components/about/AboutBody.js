@@ -21,7 +21,7 @@ const AboutBody = () => {
             </div>
             <br/> <br/> <br/> <br/>
             <FadeInSection>
-                <div className="about-img-text-container">
+                <div className="about-img-text-container Dark">
                     <img src="about/family-photo-christmas.jpg" alt="Family Christmas" />
                     <p> My name's Aidan, and I'm an upcoming Junior at The Cooper 
                         Union majoring in electrical engineering! I grew up in 
@@ -39,6 +39,7 @@ const AboutBody = () => {
             </FadeInSection>
             <br/> <br/> <br/> <br/>
             
+            <hr/>
             <div className="image-wide-container">
                 <img src="about/cooper_wide.jpg" alt="The Cooper Union" className="wide-image" />
                 <div className="centered-text">
@@ -49,7 +50,7 @@ const AboutBody = () => {
 
             <br/>
             <FadeInSection>
-                <div className="about-img-text-container">
+                <div className="about-img-text-container Light">
                     <p> The Cooper Union for the Advancement of Science and Art (The Cooper
                         Union) is a private institute located within the East Village in New 
                         York City. The school was founded in 1859 by Peter Cooper and offers
@@ -66,7 +67,7 @@ const AboutBody = () => {
                         and I am on a track to graduate with a minor in computer 
                         science. Although I have only been a student for two years,
                         I have made countless memories with my friends here and 
-                        appreciate what it has given me thus far.
+                        appreciate the experience it has given me thus far.
                     </p>
                     <img src="about/chemlab-with-noam.jpg" alt="Chem Lab with Noam" />
                 </div> 
@@ -79,16 +80,17 @@ const AboutBody = () => {
                         <tr>
                             <td>
                                 <h2> Relevant Coursework <br/> Includes: </h2>
+                                <a> (*) Denotes ECE Course </a>
                             </td>
                             <td>
                                 <h3>Sophomore Year</h3>
                                 <ul>
-                                    <li>Software Engineering</li>
-                                    <li>Computer Architecture</li>
-                                    <li>Data Structures and Algorithms II</li>
-                                    <li>Circuit Analysis</li>
-                                    <li>Signal Processing</li>
-                                    <li>Electronics I</li>
+                                    <li>* Software Engineering</li>
+                                    <li>* Computer Architecture</li>
+                                    <li>* Data Structures and Algorithms II</li>
+                                    <li>* Circuit Analysis</li>
+                                    <li>* Signal Processing</li>
+                                    <li>* Electronics I</li>
                                     <li>Vector Calculus</li>
                                     <li>Partial & Ordinary Differential Equations</li>
                                     <li>Probability</li>
@@ -98,9 +100,9 @@ const AboutBody = () => {
                             <td>
                                 <h3>Freshman Year</h3>
                                 <ul>
-                                    <li>Programming for Electrical Engineers</li>
-                                    <li>Data Structures and Algorithms I</li>
-                                    <li>Digital Logic Design</li>
+                                    <li>* Programming for Electrical Engineers</li>
+                                    <li>* Data Structures and Algorithms I</li>
+                                    <li>* Digital Logic Design</li>
                                     <li>Calculus I & II</li>
                                     <li>Introduction to Linear Algebra</li>
                                     <li>Physics Mechanics</li>
@@ -113,6 +115,48 @@ const AboutBody = () => {
                     </table>
                 </div>
             </FadeInSection>
+            
+            <br/> <br/>
+            <FadeInSection>
+                <div className="about-img-text-container Dark">
+                    <img src="about/igvc-photo.jpg" alt="IGVC Team Photo 2023" />
+                    <p> In additon to my coursework, I'm involved in numerous
+                        clubs and organizations at The Cooper Union such as 
+                        the Google Student Developer Club, the Badminton Club,
+                        and IEEE. I am also a former member of the Intelligent 
+                        Ground Vehicle Compeition (IGVC) Team where I worked 
+                        in the Drive-By-Wire subteam on the car's battery 
+                        monitor firmware. 
+
+                        <br/><br/>
+                        
+                    </p>
+                </div>
+                <div className="about-img-text-container Light">
+                    <p>
+                        I hold two part-time positions on campus as a Student
+                        Operator at Brooks Lab Computer Center and as a Group Tour
+                        Guide for the Albert Nerken School of Engineering. In 
+                        addition to these jobs, I often work temporary jobs for 
+                        the school such as a technician for the 2024 job fair,
+                        an organizer for the End of the Year Show, and a Campus 
+                        Orientation Guide for incoming freshmen!
+                    </p>
+                    <img src="about/cooper-badminton.jpg" alt="Cooper Badminton 2023" />
+                </div>
+            </FadeInSection>
+
+            <br/><br/><br/>
+            
+            <hr/>
+            <div className="image-wide-container">
+                <img src="about/masuk-wide.jpg" alt="Masuk High School" className="wide-image" />
+                <div className="centered-text">
+                    <h2>High School & Robotics</h2>
+                </div>
+            </div>
+            <hr/>
+
         </div>
     );
 }

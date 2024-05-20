@@ -38,26 +38,28 @@
 .about-img-text-container {
     overflow: hidden;
     position: relative;
-    height: 250px; /* Set a specific height */
+    height: auto; /* Set a specific height */
     width: 100%;
-    background-color: #bcd7e8;
     display: flex; /* Using flexbox to align children side by side */
     align-items: center; /* Center items vertically */
     justify-content: center; /* Center items horizontally */
     padding: 20px 0;
     background-color: rgba(0, 47, 86, 0.25);
-}
-
-.about-img-text-container {
     display: flex;
     flex-direction: row; 
     flex-grow: 1;
 }
 
+.about-img-text-container.Dark {
+    background-color: rgba(0, 47, 86, 0.3);
+}
+
+.about-img-text-container.Light {
+    background-color: rgba(0, 47, 86, 0.075);
+}
+
 .about-img-text-container img {
-    min-height: 80%;
-    max-height: 100%;
-    width: auto;
+    max-height: 250px;
     padding: 3vw;
     margin: 0 auto;
 }

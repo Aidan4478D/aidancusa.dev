@@ -20,7 +20,7 @@
 
 .carousel-card > img {
     max-height: 70%;
-    min-width: 90%;
+    min-width: auto;
     opacity: 0.75;
 }
 
