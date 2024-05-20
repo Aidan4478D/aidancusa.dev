@@ -68,11 +68,21 @@
     text-wrap: pretty;
 }
 
-.about-img-text-container a {
+.about-img-text-container p {
     color: #333;
     font-size: 1.2em;
     text-wrap: pretty;
-    margin-right: 3vw;
+    margin: 0 3vw;
+}
+
+.about-link {
+    text-decoration: underline;
+    color: #333;
+    font-size: 1em;
+}
+
+.about-link:hover {
+    cursor: pointer;
 }
 
 /* wide images */
@@ -98,4 +108,46 @@
     color: #002f56;
     text-align: center; 
     width: 100%; 
+}
+
+.rc-table {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 2vh;
+}
+
+.rc-table table {
+    border-collapse: collapse; /* Ensures the table borders are collapsed into a single border */
+    margin: auto; /* Centers the table horizontally */
+}
+
+.rc-table table td {
+    vertical-align: top; /* Aligns content at the top of the cell */
+    padding: 10px; /* Adjust padding as necessary */
+}
+
+.rc-table ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rc-table li {
+    margin-right: 5vw; /* Removes margin */
+    transition: transform 0.3s;
+}
+.rc-table li:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.rc-table h3 {
+    margin-top: 0;
+    margin-bottom: 10px; /* Space below the header */
+}
+
+.rc-table h2 {
+    margin-top: 0px;
+    margin-right: 5vw; /* Space below the header */
 }
