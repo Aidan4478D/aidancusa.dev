@@ -180,8 +180,8 @@ const AboutBody = () => {
                         &nbsp;
                         <br/><br/>
 
-                        On my team, I took on the role as the programmer as it was the 
-                        only vacant slot and we became team 4478D.
+                        On my team, I took on the role as the programmer and we 
+                        became team 4478D.
                     </p>
                 </div>
                 <div className="about-img-text-container Light">
@@ -249,6 +249,7 @@ const AboutBody = () => {
                     </p>
                 </div>
             </FadeInSection>
+
             <FadeInSection>
                 <div className="about-img-text-container Dark">
                      <p>
@@ -266,12 +267,12 @@ const AboutBody = () => {
                         having the highest consistently scoring robot. 
 
                     </p>
-                    <img src="about/robotics/regionals-team-photo-2022.jpg" alt="2020 NATM Champs" />
-                    <img src="about/robotics/rank-1-2022.jpg" alt="2020 NATM Champs" />
+                    <img src="about/robotics/regionals-team-photo-2022.jpg" alt="2022 Regionals Team" />
+                    <img src="about/robotics/rank-1-2022.jpg" alt="2022 Rank 1" />
 
                 </div>
                 <div className="about-img-text-container Dark">
-                    <img src="about/robotics/worlds-team-photo-2022.jpg" alt="2020 NATM Champs" />
+                    <img src="about/robotics/worlds-team-photo-2022.jpg" alt="2022 Worlds Team" />
                     <p>
                         We were able to travel to San Fransisco, CA, and Dallas, TX, to
                         compete with top tier teams going far in each tournament. 
@@ -289,6 +290,64 @@ const AboutBody = () => {
                     </p>
                 </div>
             </FadeInSection>
+            
+            <br/><br/>
+
+            <FadeInSection> 
+                <div className="about-img-text-container Medium">
+                    <img src="about/aqua-logo.jpg" alt="2022 Regionals Team" />
+                    <img src="about/holding-squid.jpg" alt="2022 Regionals Team" />
+                    <p>
+                        While in high school, in addition to attending Masuk, I was also
+                        enrolled in the Bridgeport Regional Aquaculture Science and 
+                        Technology Education Center (BRASTEC or Aqua). 
+                        
+                        <br/> <br/>
+        
+                        There, I took my general science courses such as biology, 
+                        chemistry, and physics, but also engaged in oceanography, 
+                        analytical chemistry, costal navigation & piloting, and 
+                        other marine courses. Weekly class were held on the     
+                        school's research vessel, studying and identifying organisms 
+                        in the Long Island Sound. Additionally, I captained the school's 
+                        National Ocean Sciences Bowl Team my senior year (2022)
+                        where we ended as regional semi-finalists. 
+                    </p>  
+                </div>
+            </FadeInSection>
+            
+            <div className = "center-text-no-wide"> <h2> <center> Activities & Hobbies </center> </h2> </div>
+
+            
+            <FadeInSection> 
+                <div className="about-img-text-container Light">
+                    <p>
+                        Although I do spend a lot of time working on academics
+                        and related ventures, I try to not let it consume my life.
+                        Some activities that I enjoy doing are on the right!
+                    </p>
+                    <div class="rc-table Inside">
+                        <table>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Solving Rubik's Cubes (3x3 PR is 19.45s)</li>
+                                        <li>Playing Music (guitar, drums, piano)</li>
+                                        <li>Knitting</li>
+                                        <li>Brewing Tea</li>
+                                        <li>Reading</li>
+                                        <li>Fishing</li>
+                                        <li>Playing Video Games</li>
+                                        <li>Hanging out with friends and family</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </FadeInSection>
+
+
         </div>
     );
 }

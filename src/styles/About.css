@@ -54,6 +54,10 @@
     background-color: rgba(0, 47, 86, 0.3);
 }
 
+.about-img-text-container.Medium {
+    background-color: rgba(0, 47, 86, 0.125);
+}
+
 .about-img-text-container.Light {
     background-color: rgba(0, 47, 86, 0.075);
 }
@@ -112,31 +116,43 @@
     width: 100%; 
 }
 
+.center-text-no-wide {
+    font-size: 2vw; 
+    color: #002f56;
+    text-align: center; 
+}
+
 .rc-table {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     padding: 2vh;
+    width: 100%; /* Ensure the div takes the full parent width */
 }
 
 .rc-table table {
     border-collapse: collapse; /* Ensures the table borders are collapsed into a single border */
-    margin: auto; /* Centers the table horizontally */
+    width: auto; /* Allows the table to grow or shrink based on content */
+    max-width: 100%; /* Prevents the table from becoming too wide */
+    margin: auto; /* Ensures it stays centered */
 }
 
 .rc-table table td {
     vertical-align: top; /* Aligns content at the top of the cell */
-    padding: 10px; /* Adjust padding as necessary */
+    padding: 0 20px; /* Adjust padding as necessary */
 }
 
 .rc-table ul {
-    list-style-type: none;
+    list-style-type: none; /* Removes the default list style */
     padding: 0;
     margin: 0;
 }
 
+.rc-table.Inside ul {
+    list-style-type: square; /* Removes the default list style */
+}
+
 .rc-table li {
-    margin-right: 5vw; /* Removes margin */
     transition: transform 0.3s;
 }
 .rc-table li:hover {
@@ -144,12 +160,7 @@
     cursor: pointer;
 }
 
-.rc-table h3 {
-    margin-top: 0;
+.rc-table h3, .rc-table h2 {
+    margin: 0;
     margin-bottom: 10px; /* Space below the header */
-}
-
-.rc-table h2 {
-    margin-top: 0px;
-    margin-right: 5vw; /* Space below the header */
 }
