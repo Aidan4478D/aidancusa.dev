@@ -56,6 +56,7 @@ const AboutBody = () => {
                         York City. The school was founded in 1859 by Peter Cooper and offers
                         degrees in engineering, art, and architecture. 
 
+                        &nbsp;
                         <a className = "about-link" onClick={() => handleNavigate('https://cooper.edu/admissions/facts')}> 
                             Click here to learn more about The Cooper Union! 
                         </a> 
