@@ -8,7 +8,7 @@ const PortfolioPage = () => {
     return (
         <div>
             <Header />
-            <h1> Portfolio Page </h1>
+            <center> <h1> Sorry this page is currently under construction. </h1> </center>
             <Footer />
         </div>
     );

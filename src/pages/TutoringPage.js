@@ -8,7 +8,7 @@ const TutoringPage = () => {
     return (
         <div>
             <Header />
-            <h1> Tutoring Page </h1>
+            <center> <h1> Sorry this page is currently under construction. </h1> </center>
             <Footer />
         </div>
     );

@@ -8,7 +8,7 @@ const ContactPage = () => {
     return (
         <div>
             <Header />
-            <h1> Contact Page </h1>
+            <center> <h1> Sorry this page is currently under construction. </h1> </center>
             <Footer />
         </div>
     );
