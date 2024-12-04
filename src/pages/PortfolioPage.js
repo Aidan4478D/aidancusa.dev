@@ -8,7 +8,9 @@ const PortfolioPage = () => {
     return (
         <div>
             <Header />
+            <br/><br/><br/>
             <center> <h1> Sorry this page is currently under construction. </h1> </center>
+            <br/><br/><br/>
             <Footer />
         </div>
     );
