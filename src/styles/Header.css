@@ -1,81 +1,42 @@
 
-
 header {
-    background-color: #002F56;
-    color: #fff;
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    position: relative;
-    justify-content: center; /* Aligns children (including buttons container) to the center horizontally */
-    align-items: center; /* Aligns children to the center vertically */
-    min-height: 100%;
-    flex-wrap: nowrap;
-}
-
-.buttons-and-name-conatiner {
+    background-color: #d9dad9;
+    color: #002F56;
     display: flex;
     align-items: center;
-    justify-content: center; /* This ensures the buttons themselves are centered relative to each other */
-    width: 60%; /* Ensure the container takes up all horizontal space of the header */
-    min-height: 100%; /* Ensure the container takes up all vertical space of the header */
-    gap: 2em;
-}
-
-
-.header-button-left, .header-button-right {
-    flex-grow: 1; /* Each button will grow evenly to fill the container */
-    display: flex;
-    justify-content: center; /* Center text horizontally */
-    align-items: center; /* Center text vertically */
-    background-color: #002F56;
-    color: white; /* Text color */
-    text-decoration: none;
-    font-size: 1em;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 0;
-    letter-spacing: 2px;
-    text-align: center;
-    position: relative;
-    transition: all .35s;
+    justify-content: space-between;  /* push name to left, nav to right */
+    padding: 0 2rem;                  /* optional side padding */
     height: 10vh;
-}
-
-.header-button-left:hover, .header-button-right:hover {
-    z-index: 1;
-    color: white;
-}
-
-.header-button-left:after, .header-button-right:after{
-    position: absolute;
-    content: "";
-    top: 0;
-    width: 0;
-    height: 100%;
-    background: #0059b3;
-    transition: all .35s;
-    color: white;
-    z-index: -1; /* Ensures it's behind the text */
-}
-
-.header-button-left:after {
-    right: 0;
-}
-
-.header-button-right:after {
-    left: 0;
-}
-
-.header-button-left:hover:after, .header-button-right:hover:after {
-    width: 100%;
-    color: white;
 }
 
 header h1 {
+    margin: 0;
     font-size: 1.5em;
-    color: white;
     cursor: pointer;
-    text-wrap: nowrap;
+    transition: color 0.3s;
 }
+
+.header-nav {
+    display: flex;
+    gap: 2rem;    /* space between buttons */
+}
+
+.header-nav .header-button {
+    text-decoration: none;
+    background-color: #d9dad9;
+    color: #002F56;
+    font-size: 1em;
+    letter-spacing: 2px;
+    padding: 0.5rem 0;     /* vertical padding; you can tweak */
+    transition: color 0.3s;
+    /*border-radius: 5vw;*/
+    cursor: pointer;
+    border: none;
+}
+
+.header-nav .header-button:hover,
+.header-nav .header-button.active {
+    /*background-color: #0059b3;*/
+    color: #fff;
+}
+

@@ -1,0 +1,103 @@
+/* ProjectSlideshow.css */
+* { box-sizing: border-box; }
+
+/* Centered container */
+.slideshow-container {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1000px;
+}
+
+/* Hide all slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Show only the active slide */
+.mySlides.active {
+    display: block;
+}
+
+/* FIX: each image is 250px tall, width auto, centered */
+.slide-image {
+    height: 250px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Prev/next arrows */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.3);
+    border: none;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+.prev { left: 0.5rem; }
+.next { right: 0.5rem; }
+.prev:hover, .next:hover {
+    background: rgba(0,0,0,0.6);
+}
+
+/* Caption & number text */
+.numbertext, .text {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    color: #f2f2f2;
+    padding: 0.5rem;
+}
+.numbertext { top: 0; font-size: 0.75rem; }
+.text       { bottom: 0; font-size: 1rem; }
+
+/* Dots */
+.dots-container {
+    text-align: center;
+    margin-top: 1rem;
+}
+.dot {
+    display: inline-block;
+    margin: 0 0.25rem;
+    width: 12px;
+    height: 12px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.dot.active, .dot:hover {
+    background: #717171;
+}
+
+/* Fade in */
+.fade {
+    animation: fadeIn 1s ease both;
+}
+@keyframes fadeIn {
+    from { opacity: 0.4; }
+    to   { opacity: 1;   }
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    .slide-image {
+        height: 180px;    /* smaller on phones */
+    }
+    .prev, .next {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+    .text {
+        font-size: 0.85rem;
+        padding: 0.25rem;
+    }
+}
+

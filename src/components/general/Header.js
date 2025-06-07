@@ -9,12 +9,12 @@ const Header = () => {
     return (
         <div>
             <header>
-                <div className = "buttons-and-name-conatiner"> 
-                    <button className = "header-button-left" onClick={() => navigate('/about')}> About </button>
-                    <button className = "header-button-left" onClick={() => navigate('/portfolio')}> Portfolio </button>
-                    <h1 onClick={() => navigate('/')}> Aidan Cusa </h1>
-                    <button className = "header-button-right" onClick={() => navigate('/tutoring')}> Tutoring </button>
-                    <button className = "header-button-right" onClick={() => navigate('/contact')}> Contact </button>
+                <h1 onClick={() => navigate('/')}> Aidan Cusa </h1>
+                <div className = "header-nav"> 
+                    <button className = "header-button" onClick={() => navigate('/about')}> About </button>
+                    <button className = "header-button" onClick={() => navigate('/portfolio')}> Portfolio </button>
+                    <button className = "header-button" onClick={() => navigate('/tutoring')}> Resume </button>
+                    <button className = "header-button" onClick={() => navigate('/contact')}> Contact </button>
                 </div>
             </header>
         </div>

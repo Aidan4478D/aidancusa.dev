@@ -13,7 +13,6 @@ const LandingPage = () => {
     return (
         <div>
             <Header />
-            <AutoplayCarousel />
             <Intro />
             <Socials />
             <Footer />

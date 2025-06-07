@@ -2,6 +2,7 @@ import React from 'react';
 //import '../styles/LandingPage.css';
 import Header from '../components/general/Header.js'
 import Footer from '../components/general/Footer.js'
+import Slideshow from '../components/ProjectSlideshow/Slideshow.js'
 
 
 const PortfolioPage = () => {
@@ -9,6 +10,7 @@ const PortfolioPage = () => {
         <div>
             <Header />
             <br/><br/><br/>
+            <Slideshow />
             <center> <h1> Sorry this page is currently under construction. </h1> </center>
             <br/><br/><br/>
             <Footer />
