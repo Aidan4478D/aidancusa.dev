@@ -4,9 +4,9 @@ import '../styles/LandingPage.css';
 import Header from '../components/general/Header.js'
 import Footer from '../components/general/Footer.js'
 
-import AutoplayCarousel from '../components/carousel/AutoplayCarousel'
 import Intro from '../components/home/Intro.js'
 import Socials from '../components/home/Socials.js'
+import LandingActions from '../components/home/LandingActions.js'
 
 
 const LandingPage = () => {
@@ -14,6 +14,7 @@ const LandingPage = () => {
         <div>
             <Header />
             <Intro />
+            <LandingActions />
             <Socials />
             <Footer />
         </div>
