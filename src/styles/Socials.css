@@ -1,33 +1,31 @@
 .socials-container {
-    overflow: hidden;
-    position: relative;
-    height: 250px; /* Set a specific height */
-    width: 100%;
-    display: flex; /* Using flexbox to align children side by side */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    padding: 20px 0;
-    flex-direction: row; /* Change to row to align children horizontally */
-    flex-wrap: wrap; /* Allows items to wrap in case of space constraints */
+  display: flex;
+  justify-content: center;  /* center the row */
+  align-items: center;      /* center vertically */
+  flex-wrap: nowrap;        /* no wrapping allowed */
+  gap: 2rem;                /* space between each icon */
+  width: 100%;              /* fill the parent’s width */
+  /* remove fixed height & overflow */
+  margin: 0 auto;
+  padding: 1rem 0;
+  overflow-x: auto;         /* allow horizontal scroll if it ever overflows */
 }
 
 .socials-container img {
-    height: auto; /* Adjust height to be automatic */
-    width: auto; /* Adjust width to be automatic */
-    max-height: 40%; /* Restrict maximum height */
-    margin: 0 5vw; /* Add horizontal margin and remove vertical margin */
-    transition: transform 0.3s;
+  flex-shrink: 0;           /* never shrink the icons */
+  width: 50px;              /* pick a consistent size */
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s;
 }
 
 .socials-container img:hover {
-    cursor: pointer;
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-@media (max-width: 800px) {
-
-    .intro-container img {
-        max-height: 20%; /* Restrict maximum height */
-    }
+.intro-text-container .socials-container {
+  width: auto;             /* shrink to just the icons */
+  margin: 1rem auto 0;     /* center horizontally, add top gap */
+  justify-content: center; /* center icons within it */
 }
 

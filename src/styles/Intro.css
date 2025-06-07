@@ -1,69 +1,62 @@
+/* src/styles/Intro.css */
 .intro-container {
-    overflow: hidden;
-    position: relative;
-    height: 250px; /* Set a specific height */
-    width: 100%;
-    background-color: #bcd7e8;
-    display: flex; /* Using flexbox to align children side by side */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    padding: 20px 0;
-    background-color: rgba(0, 47, 86, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  margin: auto 5%;
 }
 
 .intro-text-container {
-    display: flex;
-    flex-direction: column; 
-    flex-grow: 1;
-}
-
-.intro-container img {
-    min-height: 80%;
-    max-height: 100%;
-    width: auto;
-    margin-right: 20px;
-    margin-left: 8vw;
+  flex: 1;
+  max-width: 40%;
 }
 
 .intro-text-container h1 {
-    color: #333;
-    flex-grow: 1;
-    text-wrap: pretty;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #002F56;
 }
 
-.intro-text-container a {
-    color: #333;
-    font-size: 1.2em;
-    text-wrap: pretty;
-    margin-right: 3vw;
+.intro-text-container p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #333;
 }
 
-
-/* Responsive adjustments */
-/* Targeting phone screens */
-
-@media (max-width: 800px) {
-    .intro-container {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
-
-    .intro-container img {
-        width: 35%;
-        margin-right: 0;
-        margin-left: 0;
-        align-self: center; 
-    }
-
-    .intro-text-container {
-        align-items: center;
-        text-align: center;
-    }
-
-    .intro-text-container h1, .intro-text-container a {
-        font-size: 1em;
-    }
+.intro-image-container {
+  flex: 1;
+  text-align: right;
 }
 
+.intro-image-container img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Socials inside intro: override if needed */
+.intro-text-container .socials-container {
+  justify-content: flex-start;   /* icons aligned with left text */
+  margin-top: 1rem;
+}
+
+/* Mobile: stack text+socials above image */
+@media (max-width: 768px) {
+  .intro-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .intro-text-container,
+  .intro-image-container {
+    max-width: 100%;
+  }
+  .intro-image-container {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
 

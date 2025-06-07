@@ -16,7 +16,7 @@ const Footer = () => {
                 <a className = "footer-link" onClick={() => navigate('/contact')}> Contact </a>
             </div>
             <div className = "footer-container-text">
-                <a> Website constructed by Aidan Cusa © 2024 </a>
+                <a> Website constructed by Aidan Cusa © 2025 </a>
             </div>
         </footer>
     );
