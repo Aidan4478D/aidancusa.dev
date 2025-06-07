@@ -2,7 +2,8 @@ import React from 'react';
 //import '../styles/LandingPage.css';
 import Header from '../components/general/Header.js'
 import Footer from '../components/general/Footer.js'
-import Slideshow from '../components/ProjectSlideshow/Slideshow.js'
+import Slideshow from '../components/projects/Slideshow.js'
+import YearProjects from '../components/projects/YearProjects.js'
 
 
 const PortfolioPage = () => {
@@ -11,7 +12,7 @@ const PortfolioPage = () => {
             <Header />
             <br/><br/><br/>
             <Slideshow />
-            <center> <h1> Sorry this page is currently under construction. </h1> </center>
+            <YearProjects />
             <br/><br/><br/>
             <Footer />
         </div>

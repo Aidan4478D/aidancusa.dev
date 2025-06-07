@@ -1,0 +1,50 @@
+/* container: 4 equal columns, with gap */
+.year-projects-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    width: 90%;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+
+/* each column: center contents */
+.project-column {
+    text-align: center;
+}
+
+/* image: full width of column, auto height, hover scale */
+.project-column img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.project-column img:hover {
+    transform: scale(1.05);
+}
+
+/* title & description */
+.project-column h3 {
+    margin: 0.75rem 0 0.25rem;
+    font-size: 1.25rem;
+    color: #002F56;
+}
+
+.project-column p {
+    margin: 0;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.4;
+}
+
+/* mobile: stack into one column */
+@media (max-width: 800px) {
+    .year-projects-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+

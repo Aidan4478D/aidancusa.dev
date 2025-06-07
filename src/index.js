@@ -10,6 +10,8 @@ import ContactPage from "./pages/ContactPage"
 import TutoringPage from "./pages/TutoringPage"
 import PortfolioPage from "./pages/PortfolioPage"
 
+import Project1 from "./pages/projects/Project1" // ASCII tetries
+
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +23,7 @@ root.render(
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/tutoring" element={<TutoringPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/portfolio/:1" element={<Project1 />} />
         </Routes>
     </BrowserRouter>
 );
