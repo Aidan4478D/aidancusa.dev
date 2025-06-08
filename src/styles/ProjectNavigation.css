@@ -1,11 +1,10 @@
 .project-nav-container {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Aligns links to edges */
     padding: 0.25rem 1rem;
     background: none;
-    border: none;
-    margin-bottom: 1rem; /* Add space below navigation */
+    margin: 1rem 0; /* Adds vertical spacing */
 }
 
 /* tiny link styling */
@@ -14,15 +13,13 @@
     font-size: 1rem;
     text-decoration: none;
     background: none;
-    margin-bottom: 1rem;
+    padding: 0.5rem; /* Better than margin for click area */
 }
 
 .project-nav-link:hover {
     text-decoration: underline;
     background: none;
-    margin-bottom: 1rem;
 }
-
 /* stacked on very small screens */
 @media (max-width: 600px) {
     .project-nav-container {

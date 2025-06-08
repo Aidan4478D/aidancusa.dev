@@ -77,7 +77,7 @@ export default function Project1Content() {
             <div className="image-gallery">
                 <div className="gallery-item">
                     <img
-                        src="/projects/project2/dld_final_project_overlay.png"
+                        src="/projects/project2/dld_final_project_board.png"
                         alt="Breadboard chip layout"
                     />
                     <div className="gallery-caption">Breadboard chip layout</div>

@@ -34,11 +34,11 @@ export default function ProjectPage() {
     if (!project || !Content) {
         return (
             <>
-            <Header />
-            <div style={{ padding: '2rem', textAlign: 'center' }}>
-            <h2>Project not found</h2>
-            </div>
-            <Footer />
+                <Header />
+                <div style={{ padding: '2rem', textAlign: 'center' }}>
+                    <h2>Project not found</h2>
+                </div>
+                <Footer />
             </>
         );
     }
@@ -55,6 +55,8 @@ export default function ProjectPage() {
                     <Content />
                 </div>
             </div>
+
+            <ProjectNavigation />
 
             <Footer />
         </>

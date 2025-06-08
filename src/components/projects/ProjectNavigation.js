@@ -17,8 +17,8 @@ export default function ProjectNavigation() {
 
     return (
         <div className="project-nav-container">
-            <Link to={prev.path} className="project-nav-link prev"> ← {prev.caption} </Link>
-            <Link to={next.path} className="project-nav-link next"> {next.caption} → </Link>
+            <Link to={prev.path} className="project-nav-link project-prev"> ← {prev.caption} </Link>
+            <Link to={next.path} className="project-nav-link project-next"> {next.caption} → </Link>
         </div>
     );
 }
