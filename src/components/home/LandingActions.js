@@ -6,21 +6,21 @@ import '../../styles/LandingActions.css';
 const ACTIONS = [
     {
         title: 'Get to Know Me',
-        imgSrc: '/landing/about.jpg',       // replace with your own
+        imgSrc: '/about/microsoft-square.jpg',
         link: '/about',
         external: false,
     },
     {
         title: 'Explore My Work',
-        imgSrc: '/landing/work.jpg',        // replace with your own
+        imgSrc: '/about/theremin-setup-square.jpg',
         link: '/portfolio',
         external: false,
     },
     {
         title: 'View My Resume',
-        imgSrc: '/landing/resume.jpg',      // replace with your own
+        imgSrc: '/landing/resume.jpg',
         link: '/resume.pdf',
-        external: true,                     // opens in new tab
+        external: true, // opens in new tab
     },
 ];
 

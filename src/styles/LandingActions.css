@@ -36,12 +36,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.2);
     transition: background 0.3s;
 }
 
-.image-wrapper:hover .overlay {
-    background: rgba(0, 0, 0, 0.2);
+.image-wrapper:hover .overlay .overlay-text {
+    background: rgba(0, 0, 0, 0);
+    color: black;
 }
 
 .overlay-text {
@@ -49,7 +50,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    color: black;
     font-size: 1.5rem;
     text-align: center;
     padding: 0 1rem;

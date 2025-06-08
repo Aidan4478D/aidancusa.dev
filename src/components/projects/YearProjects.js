@@ -5,27 +5,27 @@ import '../../styles/YearProjects.css';
 const COLUMNS = [
     {
         title: 'Freshman Year',
-        imgSrc: '/projects/freshman.png',
+        imgSrc: 'projects/freshman_wires_cropped.jpg',
         description: 'Intro to circuits, C & python programming, and our first design projects.',
-        link: '/projects/freshman',
+        link: '/projects/:1',
     },
     {
         title: 'Sophomore Year',
-        imgSrc: '/projects/sophomore.png',
+        imgSrc: 'projects/sophomore-run-laplace-cropped.jpg',
         description: 'Software engineering, data structrues & algorithms, computer architecture, signal processing, introduction to electronics.',
-        link: '/projects/sophomore',
+        link: '/projects/:3',
     },
     {
         title: 'Junior Year',
-        imgSrc: '/projects/junior.png',
+        imgSrc: 'projects/junior-gen-ml-cropped.jpg',
         description: 'Frequentist & generative machine learning, natural language processing, communication networks, operating systems, compilers, advanced electronics, independent studies',
-        link: '/projects/junior',
+        link: '/projects/:8',
     },
     {
         title: 'Personal Projects',
-        imgSrc: '/projects/personal.png',
+        imgSrc: 'projects/personal.png',
         description: 'My personal interest projects!',
-        link: '/projects/personal',
+        link: '/projects/:12',
     },
 ];
 
