@@ -1,0 +1,17 @@
+.project-page-container {
+    width: 90%;
+    margin: 2rem auto;
+    display: block; /* Changed from no display to block for clarity */
+}
+
+/* Center the image and content */
+.project-content-block {
+    text-align: center;
+}
+
+.project-page-image {
+    width: auto;
+    height: 250px;
+    margin: 0 auto 1rem;
+    display: block;
+}

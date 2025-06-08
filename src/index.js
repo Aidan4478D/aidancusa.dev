@@ -10,7 +10,7 @@ import ContactPage from "./pages/ContactPage"
 import TutoringPage from "./pages/TutoringPage"
 import PortfolioPage from "./pages/PortfolioPage"
 
-import Project1 from "./pages/projects/Project1" // ASCII tetries
+import ProjectPage from './pages/projects/ProjectPage';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
@@ -23,7 +23,7 @@ root.render(
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/tutoring" element={<TutoringPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
-            <Route path="/projects/:1" element={<Project1 />} />
+            <Route path="/projects/:projectId" element={<ProjectPage />} />
         </Routes>
     </BrowserRouter>
 );
