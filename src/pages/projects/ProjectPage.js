@@ -10,6 +10,7 @@ import '../../styles/ProjectPage.css';
 
 import Project1Content  from './content/Project1Content';
 import Project2Content  from './content/Project2Content';
+import Project3Content  from './content/Project3Content';
 //import Project4Content  from './content/Project4Content';
 //import Project10Content from './content/Project10Content';
 //import Project11Content from './content/Project11Content';
@@ -17,6 +18,7 @@ import Project2Content  from './content/Project2Content';
 const CONTENT_MAP = {
     1:  Project1Content,
     2:  Project2Content,
+    3:  Project3Content,
     //4:  Project4Content,
     //10: Project10Content,
     //11: Project11Content,

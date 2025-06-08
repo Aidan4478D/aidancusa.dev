@@ -16,8 +16,8 @@ const PROJECTS = [
     {
         id: 3,
         caption: 'Mini CAN-Bus',
-        src: '/projects/mini-can-bus.png',
-        path: '/projects/2',
+        src: '/projects/arduino-communication-diagram.png',
+        path: '/projects/3',
     },
     {
         id: 4,
