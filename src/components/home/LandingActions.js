@@ -18,8 +18,8 @@ const ACTIONS = [
     },
     {
         title: 'View My Resume',
-        imgSrc: '/landing/resume.jpg',
-        link: '/resume.pdf',
+        imgSrc: '/about/resume-cover.jpg',
+        link: '/2025_fall_resume.pdf',
         external: true, // opens in new tab
     },
 ];

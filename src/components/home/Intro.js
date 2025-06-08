@@ -9,10 +9,11 @@ const Intro = () => {
             <div className="intro-text-container">
                 <h1>Hello!</h1>
                 <p>
-                    I am a Junior Electrical Engineering student at The Cooper Union, passionate
+                    I am a Senior Electrical Engineering student at The Cooper Union, passionate
                     in tinkering with technology and programming. I have experience in Software
-                    Engineering (both front-end and back-end) though my primary interests lie in
-                    Artificial Intelligence development!
+                    Engineering (both front-end and back-end), Computer Engineering, Data Engineering, 
+                    Firmware Engineering, Machine Learning Engineering, and Data Analytics. My primary 
+                    interests lie in Artificial Intelligence development!
                 </p>
 
                 <Socials />
