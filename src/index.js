@@ -7,7 +7,6 @@ import reportWebVitals from './reportWebVitals';
 import App from './App';
 import AboutPage from "./pages/AboutPage"
 import ContactPage from "./pages/ContactPage"
-import TutoringPage from "./pages/TutoringPage"
 import PortfolioPage from "./pages/PortfolioPage"
 
 import ProjectPage from './pages/projects/ProjectPage';
@@ -21,7 +20,6 @@ root.render(
             <Route path="/" element={<App />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/tutoring" element={<TutoringPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/projects/:projectId" element={<ProjectPage />} />
         </Routes>

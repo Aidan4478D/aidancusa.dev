@@ -13,7 +13,7 @@ const Header = () => {
                 <div className = "header-nav"> 
                     <button className = "header-button" onClick={() => navigate('/about')}> About </button>
                     <button className = "header-button" onClick={() => navigate('/portfolio')}> Portfolio </button>
-                    <button className = "header-button" onClick={() => navigate('/tutoring')}> Resume </button>
+                    <button className = "header-button" onClick={() => window.open('/2025_fall_resume.pdf', '_blank')}> Resume </button>
                     <button className = "header-button" onClick={() => navigate('/contact')}> Contact </button>
                 </div>
             </header>
