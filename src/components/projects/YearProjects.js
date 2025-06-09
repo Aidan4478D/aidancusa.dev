@@ -13,7 +13,7 @@ const COLUMNS = [
         title: 'Sophomore Year',
         imgSrc: 'projects/sophomore-run-laplace-cropped.jpg',
         description: 'Software engineering, data structrues & algorithms, computer architecture, signal processing, introduction to electronics.',
-        link: '/projects/3',
+        link: '/projects/4',
     },
     {
         title: 'Junior Year',
@@ -37,11 +37,7 @@ const YearProjects = () => {
         <div className="year-projects-container">
             {COLUMNS.map(({ title, imgSrc, description, link }, idx) => (
                 <div key={idx} className="project-column">
-                    <img
-                        src={imgSrc}
-                        alt={title}
-                        onClick={() => handleClick(link)}
-                    />
+                    <img src={imgSrc} alt={title} onClick={() => handleClick(link)} />
                     <h3>{title}</h3>
                     <p>{description}</p>
                 </div>

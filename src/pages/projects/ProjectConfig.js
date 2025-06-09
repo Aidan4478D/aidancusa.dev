@@ -9,7 +9,7 @@ const PROJECTS = [
     },
     {
         id: 2,
-        caption: 'Digital Logic Minigame',
+        caption: 'Digital Logic Hole in the Wall',
         src: '/projects/project2/dld_logisim_final_project.png',
         path: '/projects/2',
     },

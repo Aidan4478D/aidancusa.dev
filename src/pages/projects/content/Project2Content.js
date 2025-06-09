@@ -5,7 +5,7 @@ import '../../../styles/ProjectContent.css';
 export default function Project1Content() {
     return (
         <div className = "project-content-box">
-            <h2>Digital Hole in the Wall</h2>
+            <h2>Digital Logic Hole in the Wall</h2>
             <p>
                 The digital logic minigame was made for the ECE150 - Digital
                 Logic Design course during the Cooper Union Spring 2023 semester. 
@@ -85,6 +85,7 @@ export default function Project1Content() {
 
                 <div className="gallery-item">
                     <iframe
+                        width="auto" height="250"
                         src="https://www.youtube.com/embed/UITD9vimViQ"
                         title="Digital Hole in the Wall Demo"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
