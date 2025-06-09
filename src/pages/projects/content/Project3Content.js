@@ -12,8 +12,8 @@ export default function Project3Content() {
                 class EID101 - Engineering Design and Problem Solving. Our primary 
                 was to learn about robust and reliable software capable of 
                 interpreting and transmitting sensor data effectively across 
-                multiple embedded systems. To achieve this, I teamed up with two other students, Senik Zhou
-                and Noam Shuck. Together, we created a mock CAN-bus communication 
+                multiple embedded systems. To achieve this, I teamed up with two other students, Senik Zhou (BSE'26)
+                and Noam Shuck (EE'26). Together, we created a mock CAN-bus communication 
                 protocol for three sensors and four different Arduino Mega 2560 
                 boards. This included coming up with our own CAN-frame scheme, 
                 encoding and decoding the messages, verifying data integrity 

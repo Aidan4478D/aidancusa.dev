@@ -33,8 +33,8 @@ export default function Project1Content() {
             </div>
             
             <p>
-                In this project, I worked with two other classmates, Isaac Shertz
-                and Morris Madeb. First, we came up with an overview of what the 
+                In this project, I worked with two other classmates, Isaac Shertz (EE'26)
+                and Morris Madeb (EE'26). First, we came up with an overview of what the 
                 game should look like at a high level, and then each made our own
                 versions of the game in Logisim-evolution. After a week of desigining
                 our own simulations, we came back together and combined the best parts

@@ -26,6 +26,12 @@ const PROJECTS = [
         path: '/projects/4',
     },
     {
+        id: 5,
+        caption: '16-Bit CPU',
+        src: '/projects/project5/comparch-cpu-diagram-textbook.png',
+        path: '/projects/5',
+    },
+    {
         id: 10,
         caption: 'ScopeTV',
         src: '/projects/scopetv.png',

@@ -8,10 +8,11 @@ import ProjectNavigation from '../../components/projects/ProjectNavigation';
 import PROJECTS from './ProjectConfig';
 import '../../styles/ProjectPage.css';
 
-import Project1Content  from './content/Project1Content';
-import Project2Content  from './content/Project2Content';
-import Project3Content  from './content/Project3Content';
-import Project4Content  from './content/Project4Content';
+import Project1Content from './content/Project1Content';
+import Project2Content from './content/Project2Content';
+import Project3Content from './content/Project3Content';
+import Project4Content from './content/Project4Content';
+import Project5Content from './content/Project5Content';
 //import Project10Content from './content/Project10Content';
 //import Project11Content from './content/Project11Content';
 
@@ -20,6 +21,7 @@ const CONTENT_MAP = {
     2:  Project2Content,
     3:  Project3Content,
     4:  Project4Content,
+    5:  Project5Content,
     //10: Project10Content,
     //11: Project11Content,
 };

@@ -7,7 +7,7 @@ export default function Project4Content() {
         <div className = "project-content-box">
             <h2>The BookCooper</h2>
             <p>
-                From January through May 2024, Alex Liu (EE’25) and I spun up  
+                From January through May 2024, Alex Liu (EE'25) and I spun up  
                 <strong> The BookCooper</strong>. The site was built for the 
                 class ECE366 - Software Engineering at the Cooper Union during the Spring 
                 2024 semester. It is meant to be a Cooper‑only book swap platform 
@@ -51,7 +51,8 @@ export default function Project4Content() {
                 control and project management, working on different branches,
                 creating and merging pull requests, and keeping track of issues. 
                 We used Postman to test the backend, and Azure CLI to deploy our 
-                final containerized website. 
+                final containerized website. &nbsp;
+
                 <a href="https://github.com/BookCooper/TheBookCooper">
                      Click here to view the project repository!
                 </a>
