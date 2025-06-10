@@ -9,7 +9,7 @@ export default function Project1Content() {
             <h2>16-Bit CPU</h2>
             <p>
                 From April to May in the 2024 Spring Semester, Kristof 
-                Jablonowski (EE'26) and I built a fullly functioning single‑cycle
+                Jablonowski (EE'26) and I built a fully functioning single‑cycle
                 16‑bit CPU completely in Verilog for the class ECE251 - Computer Architecture.
                 
                 Heavily referencing the Sixth Edititon of <i> Computer Organization 

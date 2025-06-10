@@ -33,9 +33,15 @@ const PROJECTS = [
     },
     {
         id: 6,
-        caption: 'Financial Sentiment Analyzer',
-        src: '/projects/project6/nlp-final-overview.png',
+        caption: 'Theremin',
+        src: '/projects/sophomore_theremin_cropped.jpg',
         path: '/projects/6',
+    },
+    {
+        id: 7,
+        caption: 'Financial Sentiment Analyzer',
+        src: '/projects/project7/nlp-final-overview.png',
+        path: '/projects/7',
     },
     {
         id: 10,

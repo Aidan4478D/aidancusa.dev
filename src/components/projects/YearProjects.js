@@ -19,7 +19,7 @@ const COLUMNS = [
         title: 'Junior Year',
         imgSrc: 'projects/junior-gen-ml-cropped.jpg',
         description: 'Frequentist & generative machine learning, natural language processing, communication networks, operating systems, compilers, advanced electronics, independent studies',
-        link: '/projects/6',
+        link: '/projects/7',
     },
     {
         title: 'Personal Projects',
