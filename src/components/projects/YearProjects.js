@@ -1,6 +1,7 @@
 import React from 'react';
 import FadeInSection from '../../tools/FadeInSection';
 import '../../styles/YearProjects.css';
+import { useNavigate } from 'react-router-dom';
 
 const COLUMNS = [
     {
@@ -28,16 +29,19 @@ const COLUMNS = [
         link: '/projects/12',
     },
 ];
+//
+// do _blank to open in new tab
+// const handleClick = (url) => window.open(url, '_blank');
 
 const YearProjects = () => {
-    const handleClick = (url) => window.open(url, '_blank');
+    const navigate = useNavigate();
 
     return (
         <FadeInSection>
         <div className="year-projects-container">
             {COLUMNS.map(({ title, imgSrc, description, link }, idx) => (
                 <div key={idx} className="project-column">
-                    <img src={imgSrc} alt={title} onClick={() => handleClick(link)} />
+                    <img src={imgSrc} alt={title} onClick={() => navigate(link)} />
                     <h3>{title}</h3>
                     <p>{description}</p>
                 </div>
