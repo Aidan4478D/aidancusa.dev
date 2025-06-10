@@ -32,6 +32,12 @@ const PROJECTS = [
         path: '/projects/5',
     },
     {
+        id: 6,
+        caption: 'Financial Sentiment Analyzer',
+        src: '/projects/project6/nlp-final-overview.png',
+        path: '/projects/6',
+    },
+    {
         id: 10,
         caption: 'ScopeTV',
         src: '/projects/scopetv.png',
