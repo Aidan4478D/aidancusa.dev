@@ -7,7 +7,7 @@ export default function Project4Content() {
         <div className = "project-content-box">
             <h2>The BookCooper</h2>
             <p>
-                From January through May 2024, Alex Liu (EE'25) and I spun up  
+                From January through May 2024, Alex Liu (EE'25) and I developed  
                 <strong> The BookCooper</strong>. The site was built for the 
                 class ECE366 - Software Engineering at the Cooper Union during the Spring 
                 2024 semester. It is meant to be a Cooper‑only book swap platform 

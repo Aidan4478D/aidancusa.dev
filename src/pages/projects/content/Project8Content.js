@@ -7,7 +7,7 @@ export default function Project8Content() {
         <div className = "project-content-box">
             <h2>Single-Balanced Active Mixer</h2>
             <p>
-                In the fall 2024 semester, Kristof Jablonowski (EE'26), Jaeho 
+                In the Fall 2024 semester, Kristof Jablonowski (EE'26), Jaeho 
                 Cho (EE'26) and I designed and built a 
 
                 <strong> single-balanced active mixer</strong>, 

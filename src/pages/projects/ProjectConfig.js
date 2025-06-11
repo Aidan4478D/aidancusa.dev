@@ -50,6 +50,12 @@ const PROJECTS = [
         path: '/projects/8',
     },
     {
+        id: 9,
+        caption: 'Cocktail Party Problem',
+        src: '/projects/junior-gen-ml-cropped.jpg',
+        path: '/projects/9',
+    },
+    {
         id: 10,
         caption: 'ScopeTV',
         src: '/projects/scopetv.png',
