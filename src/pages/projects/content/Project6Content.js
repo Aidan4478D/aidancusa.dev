@@ -14,17 +14,19 @@ export default function Project6Content() {
                 of the musical output, while the other traditionally controls the 
                 volume, although our version of the theremin is simplified, featuring 
                 only the pitch-controlling antenna. 
-            </p>
-            <p>
-                This instrument operates on the principles of human body capacitance. 
-                It consists of two oscillators: one maintains a constant frequency, 
+
+                This instrument consists of two oscillators: one maintains a constant frequency, 
                 and the other's frequency varies based on the operator's body 
-                capacitance, as measured by the antenna. This interaction creates 
-                changes in pitch when the distance between the operator's hands 
+                capacitance, as measured by the antenna. By generating the beat
+                frequency between the two waves, the user's interaction creates 
+                changes in the beat frequency and therefore the signal's pitch
+                when the distance between the operator's hands 
                 and the antenna is varied. The sound is then refined through a 
                 series of filters that eliminate unwanted frequencies, leaving 
-                only the desired frequency combinations. Our project version 
-                of the theremin, while lacking the traditional volume-controlling 
+                only the desired frequency combinations. 
+            </p>
+            <p>
+                Our project version of the theremin, while lacking the traditional volume-controlling 
                 antenna, remains a fully analog device employing oscillators, 
                 amplifiers, and filters.
 

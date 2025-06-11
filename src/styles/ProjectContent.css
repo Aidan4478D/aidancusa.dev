@@ -82,9 +82,13 @@
         flex: 1 1 100%;
         max-width: 100%;
     }
+    .gallery-item-wide img  {
+        max-width: 300px;
+        height:auto;
+    }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .gallery-item img, .gallery-item iframe {
         max-width: 250px;
         height: auto;
