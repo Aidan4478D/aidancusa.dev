@@ -44,6 +44,12 @@ const PROJECTS = [
         path: '/projects/7',
     },
     {
+        id: 8,
+        caption: 'Single-Balanced Active Mixer',
+        src: '/projects/project8/jlab1-output-oscilloscope.png',
+        path: '/projects/8',
+    },
+    {
         id: 10,
         caption: 'ScopeTV',
         src: '/projects/scopetv.png',

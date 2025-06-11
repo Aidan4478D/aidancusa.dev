@@ -15,6 +15,7 @@ import Project4Content from './content/Project4Content';
 import Project5Content from './content/Project5Content';
 import Project6Content from './content/Project6Content';
 import Project7Content from './content/Project7Content';
+import Project8Content from './content/Project8Content';
 //import Project10Content from './content/Project10Content';
 //import Project11Content from './content/Project11Content';
 
@@ -26,6 +27,7 @@ const CONTENT_MAP = {
     5:  Project5Content,
     6:  Project6Content,
     7:  Project7Content,
+    8:  Project8Content,
     //10: Project10Content,
     //11: Project11Content,
 };

@@ -33,7 +33,7 @@ export default function Project6Content() {
                 theremin instrument using the schematic below.
 
                 <div className="image-gallery">
-                    <div className="gallery-item">
+                    <div className="gallery-item-wide">
                         <img src="/projects/project6/theremin-schematic.png" alt="Theremin Schematic" />
                         <div className="gallery-caption">Theremin Schematic</div>
                     </div>

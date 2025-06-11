@@ -46,6 +46,23 @@
     display: block;
 }
 
+.gallery-item-wide {
+    flex: 1 1 calc(33.333% - 1rem);
+    max-width: calc(33.333% - 1rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-item-wide img  {
+    height: 250px;
+    width: auto;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    display: block;
+}
+
+
 .gallery-item iframe {
     border-radius: 4px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
