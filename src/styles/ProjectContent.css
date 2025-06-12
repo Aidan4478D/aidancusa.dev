@@ -91,6 +91,7 @@
 @media (max-width: 1300px) {
     .gallery-item img, .gallery-item iframe {
         max-width: 250px;
+        max-height:250px;
         height: auto;
     }
 }
