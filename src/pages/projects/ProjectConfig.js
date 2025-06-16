@@ -69,6 +69,12 @@ const PROJECTS = [
     },
     {
         id: 12,
+        caption: 'Differential to Single Ended Amplifier',
+        src: '/projects/project12/elec2-diff-amplifier-layout-zoomed.png',
+        path: '/projects/12',
+    },
+    {
+        id: 13,
         caption: 'C99 Compiler',
         src: '/projects/compiler_tiny.png',
         path: '/projects/12',
