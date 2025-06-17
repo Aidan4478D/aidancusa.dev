@@ -1,15 +1,21 @@
-## Aidan Cusa's Personal Website
+# Aidan Cusa’s Personal Website
 
-Repository for personal website.
+Live -> [**aidancusa.dev**](https://aidancusa.dev)
 
-In early 2022, I created the site, statically programmed in HTML and styled with CSS (see old_site if interested).
+A continuously‑evolving portfolio where I showcase projects, write about what I’m learning, and experiment with front‑end tooling.
 
-In 2023, I redesigned the site to be more visually appealing and user friendly by incorporating JavaScript elements.
+---
 
-In 2024, I decided to transition the site to be a React App and included many fancy features to it!
+## Evolution
 
-Now in 2025, I am redesigning the UO/UX to make the site more simple and professional.
+| Year     | Highlights                                                                                               |
+| -------- | -------------------------------------------------------------------------------------------------------- |
+| **2022** | First launch – pure HTML & CSS (see `old_site/`)                                                         |
+| **2023** | Vanilla JS overhaul: smoother scrolling, interactive menus                                               |
+| **2024** | Migrated to **React**; added routing, dark‑mode, CI/CD                                                   |
+| **2025** | Current redesign focused on cleaner UI/UX, accessibility, and performance (React 19, Tailwind CSS)       |
 
+---
 
 ### Deploy React App on GitHub pages
 
