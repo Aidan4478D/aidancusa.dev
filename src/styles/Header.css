@@ -40,3 +40,33 @@ header h1 {
     color: #fff;
 }
 
+@media screen and (max-width: 600px) {
+  /* Turn header into a vertical stack */
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;            /* let it grow to fit two rows */
+    padding: 1rem;           /* give a little breathing room */
+  }
+
+  /* Shrink your name a bit and give it some bottom margin */
+  header h1 {
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Allow the nav buttons to wrap */
+  .header-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;             /* less space between buttons */
+    width: 100%;             /* full-width container */
+  }
+
+  /* Shrink button text & padding */
+  .header-nav .header-button {
+    font-size: 0.9em;
+    padding: 0.4rem 0.6rem;
+  }
+}
+

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../styles/About.css';
 import FadeInSection from '../../tools/FadeInSection'
+import { Link } from 'react-router-dom';
 
 const AboutBody = () => {
 
@@ -19,7 +20,7 @@ const AboutBody = () => {
                     <h1 id = "top_text">About Me</h1>
                 </div>
             </div>
-            <br/> <br/> <br/> <br/>
+            <br/>
             <FadeInSection>
                 <div className="about-img-text-container Dark">
                     <img src="about/family-photo-christmas.jpg" alt="Family Christmas" />
@@ -37,7 +38,7 @@ const AboutBody = () => {
                     </p>
                 </div>
             </FadeInSection>
-            <br/> <br/> <br/> <br/>
+            <br/>
             
             <hr/>
             <div className="image-wide-container">
@@ -64,13 +65,18 @@ const AboutBody = () => {
                         &nbsp;
 
                         <br/> <br/> 
-                        At The Cooper Union, I've learned to enjoy the world of 
-                        electrical engineering more than I ever thought I would. 
-                        I currently have a major GPA of 4.00, an overall GPA of 3.7, 
-                        and I am on a track to graduate with a minor in computer 
-                        science. Although I have only been a student for two years,
-                        I have made countless memories with my friends here and 
-                        appreciate the experience it has given me thus far.
+                        At The Cooper Union, my passion for electrical engineering 
+                        and computer science 
+                        has grown through rigorous coursework and hands-on projects. 
+                        I currently hold a 4.00 major GPA and a 3.77 overall GPA. 
+                        I'm enrolled in the dual-degree Bachelor’s and Master’s of 
+                        Engineering program in Electrical Engineering, with a minor 
+                        in Computer Science. Over the past three years, I've collaborated 
+                        with peers on complex design challenges and built lasting 
+                        connections that have enriched both my personal and academic growth.&nbsp;
+                        <Link to="/portfolio" className="about-link">
+                            Click here to see some of the projects I've worked on!
+                        </Link>
                     </p>
                     <img src="about/chemlab-with-noam.jpg" alt="Chem Lab with Noam" />
                 </div> 
@@ -353,10 +359,15 @@ const AboutBody = () => {
                                     <ul>
                                         <li>Solving Rubik's Cubes (3x3 PR is 19.45s)</li>
                                         <li>Playing Music (guitar, drums, piano)</li>
+                                        <li>Producing Music</li>
                                         <li>Knitting</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
                                         <li>Brewing Tea</li>
                                         <li>Reading</li>
-                                        <li>Fishing</li>
+                                        <li>Playing Chess</li>
                                         <li>Playing Video Games</li>
                                         <li>Hanging out with friends and family</li>
                                     </ul>

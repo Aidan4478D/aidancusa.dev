@@ -26,7 +26,7 @@ const COLUMNS = [
         title: 'Personal Projects',
         imgSrc: 'projects/personal.png',
         description: 'My personal interest projects!',
-        link: '/projects/12',
+        link: '/projects/15',
     },
 ];
 //

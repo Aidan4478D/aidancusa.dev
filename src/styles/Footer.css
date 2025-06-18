@@ -36,12 +36,35 @@ footer {
     text-decoration: underline;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;       /* give a bit of vertical breathing room */
+    height: auto;          /* let it expand as needed */
+  }
 
-    footer {
-        flex-direction: column;  /* Horizontal alignment for navigation links */
-        justify-content: center; /* Aligns children (including buttons container) to the center horizontally */
-        align-items: center; /* Aligns children to the center vertically */
-        width: 100%;  /* Restrict width to 60% */
-    }
+  /* Make nav links wrap and center */
+  .footer-conatiner-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;           /* full width on mobile */
+    gap: 0.75rem;          /* tighter gaps between links */
+    margin-bottom: 1rem;   /* space below the links */
+  }
+
+  /* Shrink link text a bit */
+  .footer-link {
+    font-size: 0.9em;
+    padding: 0.25rem 0;     /* optional: add a little touch target */
+  }
+
+  /* Center & shrink the copyright text */
+  .footer-container-text {
+    width: 100%;
+    text-align: center;
+    font-size: 0.85em;
+    margin: 0;
+  }
 }
+
