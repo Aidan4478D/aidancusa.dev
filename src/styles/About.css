@@ -19,12 +19,16 @@
 
 .overlay {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); /* Center the overlay */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 1;
-    color: white; /* Ensure the text color contrasts well with the video */
     color: #002f56;
+    text-align: center;
 }
 
 #top_text {
@@ -32,9 +36,7 @@
     align-self: center;
 }
 
-
 /* text boxes stuff */
-
 .about-img-text-container {
     overflow: hidden;
     position: relative;
@@ -163,4 +165,62 @@
 .rc-table h3, .rc-table h2 {
     margin: 0;
     margin-bottom: 10px; /* Space below the header */
+}
+
+@media screen and (max-width: 768px) {
+    .rc-table table {
+        /* Treat the table as a block‐level container */
+        display: block;
+    }
+    .rc-table table tr {
+        /* Each row becomes its own block */
+        display: block;
+    }
+    .rc-table table td {
+        /* And each cell stretches to full width, stacking vertically */
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 1.5rem;
+        padding: 0 1rem; /* optional: bump the side padding on mobile */
+    }
+    /* Center your headings if you like */
+    .rc-table td h3,
+    .rc-table td h2 {
+        text-align: center;
+    }
+
+    /* shrink any big headings you overlay on images */
+    .centered-text {
+        font-size: 5vw;       /* down from 2vw */
+    }
+    .center-text-no-wide h2 {
+        font-size: 5vw;       /* down from 2vw */
+    }
+
+    /* if you want your YouTube iframe captions smaller… */
+    .about-img-text-container iframe {
+        width: 100%;          /* fill container */
+        height: auto;         /* keep aspect ratio */
+        max-height: 200px;    /* cap the height */
+    }
+
+    .about-img-text-container {
+        flex-direction: column;
+        text-align: center; 
+    }
+
+    /* Give each image its own “row” and some breathing room */
+    .about-img-text-container img {
+        width: 80%;               /* or 100%, whatever you prefer */
+        max-height: none;         /* let them resize naturally */
+        margin: 1rem auto;        /* space above/below and center */
+        padding: 0;               /* override any desktop-specific padding */
+    }
+
+    /* And keep your text centered under the images */
+    .about-img-text-container p {
+        margin-top: 1rem;
+        text-align: center;
+    }
 }

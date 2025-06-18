@@ -23,7 +23,7 @@ const AboutBody = () => {
             <FadeInSection>
                 <div className="about-img-text-container Dark">
                     <img src="about/family-photo-christmas.jpg" alt="Family Christmas" />
-                    <p> My name's Aidan, and I'm an upcoming Junior at The Cooper 
+                    <p> My name's Aidan, and I'm an incoming Senior at The Cooper 
                         Union majoring in electrical engineering! I grew up in 
                         Monroe, Connecticut and attended Masuk High School where 
                         I was an active member of the VEX Robotics team 4478D.
@@ -82,8 +82,27 @@ const AboutBody = () => {
                     <table>
                         <tr>
                             <td>
-                                <h2> Relevant Coursework <br/> Includes: </h2>
-                                <a> (*) Denotes ECE Course </a>
+                                <h2> Relevant Coursework </h2>
+                                <a> (*) Denotes ECE Course </a> <br/>
+                                <a> (**) Denotes ECE Graduate Course </a>
+                            </td>
+                            <td>
+                                <h3>Junior Year</h3>
+                                <ul>
+                                    <li>** Frequentist Machine Learning </li>
+                                    <li>** Natural Language Processing </li>
+                                    <li>** Generative Machine Learning </li>
+                                    <li>** Experimentation with PyTorch </li>
+                                    <li>** Compilers </li>
+                                    <li>* Communication Networks </li>
+                                    <li>* Computer Operating Systems </li>
+                                    <li>* Prob. Models & Stochastic Processes </li>
+                                    <li>* Digital Signal Processing </li>
+                                    <li>* Electronics II </li>
+                                    <li> Discrete Mathematics </li>
+                                    <li> Engineering Management </li>
+                                    <li> Finance </li>
+                                </ul>
                             </td>
                             <td>
                                 <h3>Sophomore Year</h3>
@@ -103,7 +122,7 @@ const AboutBody = () => {
                             <td>
                                 <h3>Freshman Year</h3>
                                 <ul>
-                                    <li>* Programming for Electrical Engineers</li>
+                                    <li>* Programming for EEs</li>
                                     <li>* Data Structures and Algorithms I</li>
                                     <li>* Digital Logic Design</li>
                                     <li>Calculus I & II</li>
