@@ -17,6 +17,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
         <Routes>
+
+            <Route path="/index.html" element={<Navigate to="/" replace />} />
+
             <Route path="/" element={<App />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
