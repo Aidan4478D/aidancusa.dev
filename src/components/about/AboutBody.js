@@ -5,10 +5,6 @@ import { Link } from 'react-router-dom';
 
 const AboutBody = () => {
 
-    const handleNavigate = (url) => {
-        window.open(url, "_blank");
-    }
-
     return (
         <div>
             <br/>
@@ -58,7 +54,7 @@ const AboutBody = () => {
                         degrees in engineering, art, and architecture. 
 
                         &nbsp;
-                        <a className = "about-link" onClick={() => handleNavigate('https://cooper.edu/admissions/facts')}> 
+                        <a className = "about-link" href="https://cooper.edu/admissions/facts" target="_blank" rel="noreferrer"> 
                             Click here to learn more about The Cooper Union! 
                         </a> 
 
@@ -89,8 +85,8 @@ const AboutBody = () => {
                         <tr>
                             <td>
                                 <h2> Relevant Coursework </h2>
-                                <a> (*) Denotes ECE Course </a> <br/>
-                                <a> (**) Denotes ECE Graduate Course </a>
+                                <span> (*) Denotes ECE Course </span> <br/>
+                                <span> (**) Denotes Graduate ECE Course </span>
                             </td>
                             <td>
                                 <h3>Junior Year</h3>
@@ -147,23 +143,24 @@ const AboutBody = () => {
             <br/> <br/>
             <FadeInSection>
                 <div className="about-img-text-container Dark">
-                    <img src="about/igvc-photo.jpg" alt="IGVC Team Photo 2023" />
+                    { /* <img src="about/igvc-photo.jpg" alt="IGVC Team Photo" /> */ }
+                    <img src="about/icpc-2024-team.png" alt="ICPC 2024 Team"/>
                     <p> In additon to my coursework, I'm involved in numerous
                         clubs and organizations at The Cooper Union such as 
                         the Google Student Developer Club, the Badminton Club,
-                        and IEEE. I am also a former member of the Intelligent 
-                        Ground Vehicle Compeition (IGVC) Team where I worked 
-                        in the Drive-By-Wire subteam on the car's battery 
+                        and IEEE. I'm on Team A of the school's International
+                        Collegiate Programming Competition Team and a former member 
+                        of the Intelligent Ground Vehicle Compeition (IGVC) Team.
+                        There, I worked in the Drive-By-Wire subteam on the car's battery 
                         monitor firmware. 
 
                         <br/><br/>
-                        
                     </p>
                 </div>
                 <div className="about-img-text-container Light">
                     <p>
                         I hold two part-time positions on campus as a Student
-                        Operator at Brooks Lab Computer Center and as a Group Tour
+                        Manager at Brooks Lab Computer Center and as a Group Tour
                         Guide for the Albert Nerken School of Engineering. In 
                         addition to these jobs, I often work temporary jobs for 
                         the school such as a technician for the 2024 job fair,
@@ -199,7 +196,7 @@ const AboutBody = () => {
                         challenge is presented in the form of a game where the students 
                         build innovative robots and compete year-round. &nbsp;
 
-                        <a className = "about-link" onClick={() => handleNavigate('https://roboticseducation.org/vex-robotics-competition/')}> 
+                        <a className = "about-link" href="https://roboticseducation.org/vex-robotics-competition/" target="blank" rel="noreferrer"> 
                             To learn more about VEX Robotics or this year's game, click here! 
                         </a>
 
@@ -241,13 +238,13 @@ const AboutBody = () => {
                 <div className="about-img-text-container Dark">
                     <img src="about/robotics/natm-match-2020.jpg" alt="2020 NATM Match" />
 
-                    <a> <iframe width="444" height="250" src="https://www.youtube.com/embed/bhACJ6sQ1go?si=oaN63Rzyedrkt1Q3" 
+                    <span> <iframe width="444" height="250" src="https://www.youtube.com/embed/bhACJ6sQ1go?si=oaN63Rzyedrkt1Q3" 
                         title="YouTube video player" frameborder="0" allow="accelerometer; 
                         autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe> </a>
+                    </iframe> </span>
 
-                    <img src="about/robotics/team-photo-2020.JPG" alt="2020 Team Photo" />
+                    <img src="about/robotics/team-photo-2020.JPG" alt="2020 Robotics Team" />
                 </div>
             </FadeInSection>
 
@@ -367,8 +364,8 @@ const AboutBody = () => {
                                     <ul>
                                         <li>Brewing Tea</li>
                                         <li>Reading</li>
-                                        <li>Playing Chess</li>
-                                        <li>Playing Video Games</li>
+                                        <li>Chess</li>
+                                        <li>Video Games</li>
                                         <li>Hanging out with friends and family</li>
                                     </ul>
                                 </td>

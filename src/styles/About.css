@@ -221,6 +221,6 @@
     /* And keep your text centered under the images */
     .about-img-text-container p {
         margin-top: 1rem;
-        text-align: center;
+        text-align: left;
     }
 }

@@ -24,7 +24,7 @@ const COLUMNS = [
     },
     {
         title: 'Personal Projects',
-        imgSrc: 'projects/personal.png',
+        imgSrc: 'projects/music_producing_cropped.jpg',
         description: 'My personal interest projects!',
         link: '/projects/15',
     },
