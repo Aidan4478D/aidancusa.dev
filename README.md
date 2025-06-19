@@ -22,3 +22,5 @@ A continuously‑evolving portfolio where I showcase projects, write about what 
 Folow tutorial here to set up React App with GitHub Pages: https://github.com/gitname/react-gh-pages
 
 Then run `$ npm run deploy -- -m "Commit message to pages"` to deploy the React App onto www.aidancusa.dev domain
+
+Then make sure that `CNAME` is included on the `gh-pages` branch with the correct domain name.
