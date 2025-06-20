@@ -12,7 +12,7 @@ const Footer = () => {
                 <a className = "footer-link" onClick={() => navigate('/')}> Home </a>
                 <a className = "footer-link" onClick={() => navigate('/about')}> About </a>
                 <a className = "footer-link" onClick={() => navigate('/portfolio')}> Portfolio </a>
-                <a className = "footer-link" onClick={() => navigate('/tutoring')}> Tutoring </a>
+                { /* <a className = "footer-link" onClick={() => navigate('/tutoring')}> Tutoring </a> */ }
                 <a className = "footer-link" onClick={() => navigate('/contact')}> Contact </a>
             </div>
             <div className = "footer-container-text">
