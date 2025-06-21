@@ -160,8 +160,8 @@ const AboutBody = () => {
                         of Engineering's honor society, and Eta Kappa Nu, the Electrical 
                         Engineering honor society. Junior year admission is highly 
                         selective: Tau Beta Pi invites only the top 12.5% of the 
-                        entire engineering class, while Eta Kappa Nu selects the 
-                        top 20% of electrical-engineering students.
+                        entire engineering class (15 students), while Eta Kappa Nu selects the 
+                        top 20% of electrical-engineering students (5 students).
                     </p>
                 </div>
                 <div className="about-img-text-container Light">

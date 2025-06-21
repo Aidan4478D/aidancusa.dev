@@ -10,7 +10,7 @@ footer {
     min-height: 100%;
 }
 
-.footer-conatiner-nav {
+.footer-container-nav {
     display: flex;
     align-items: center;
     justify-content: center; /* This ensures the buttons themselves are centered relative to each other */

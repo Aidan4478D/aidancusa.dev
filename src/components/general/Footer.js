@@ -1,9 +1,13 @@
 import React from 'react';
 import '../../styles/Footer.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from "react-router-dom"
 
 const Footer = () => {
+
+    const navigate = useNavigate();
+
     return (
+        <>
         <footer>
             <div className="footer-container-nav"> 
                 <Link className="footer-link" to="/">Home</Link>
@@ -16,8 +20,8 @@ const Footer = () => {
                 <span>Website constructed by Aidan Cusa © 2025</span>
             </div>
         </footer>
+        </>
     );
 }
 
 export default Footer;
-
