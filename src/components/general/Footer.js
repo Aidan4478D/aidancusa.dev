@@ -1,25 +1,23 @@
 import React from 'react';
 import '../../styles/Footer.css';
-import { useNavigate } from "react-router-dom"
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
-
-    const navigate = useNavigate();
-
     return (
         <footer>
-            <div className = "footer-conatiner-nav"> 
-                <a className = "footer-link" onClick={() => navigate('/')}> Home </a>
-                <a className = "footer-link" onClick={() => navigate('/about')}> About </a>
-                <a className = "footer-link" onClick={() => navigate('/portfolio')}> Portfolio </a>
-                { /* <a className = "footer-link" onClick={() => navigate('/tutoring')}> Tutoring </a> */ }
-                <a className = "footer-link" onClick={() => navigate('/contact')}> Contact </a>
+            <div className="footer-container-nav"> 
+                <Link className="footer-link" to="/">Home</Link>
+                <Link className="footer-link" to="/about">About</Link>
+                <Link className="footer-link" to="/portfolio">Portfolio</Link>
+                { /* <Link className="footer-link" to="/tutoring">Tutoring</Link> */ }
+                <Link className="footer-link" to="/contact">Contact</Link>
             </div>
-            <div className = "footer-container-text">
-                <a> Website constructed by Aidan Cusa © 2025 </a>
+            <div className="footer-container-text">
+                <span>Website constructed by Aidan Cusa © 2025</span>
             </div>
         </footer>
     );
 }
 
 export default Footer;
+
