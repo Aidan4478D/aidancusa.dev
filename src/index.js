@@ -11,11 +11,11 @@ import PortfolioPage from "./pages/PortfolioPage"
 
 import ProjectPage from './pages/projects/ProjectPage';
 
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <BrowserRouter>
+    <HashRouter>
         <Routes>
 
             <Route path="/index.html" element={<Navigate to="/" replace />} />
@@ -26,7 +26,7 @@ root.render(
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/projects/:projectId" element={<ProjectPage />} />
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
