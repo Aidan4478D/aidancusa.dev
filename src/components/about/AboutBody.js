@@ -149,12 +149,19 @@ const AboutBody = () => {
                         clubs and organizations at The Cooper Union such as 
                         the Google Student Developer Club, the Badminton Club,
                         and IEEE. I'm on Team A of the school's International
-                        Collegiate Programming Competition Team and a former member 
+                        Collegiate Programming Competition Team (pictured on the left!) and a former member 
                         of the Intelligent Ground Vehicle Compeition (IGVC) Team.
-                        There, I worked in the Drive-By-Wire subteam on the car's battery 
+                        There, I worked within the Drive-By-Wire subteam on the car's battery 
                         monitor firmware. 
 
                         <br/><br/>
+
+                        In my junior year I was inducted into Tau Beta Pi, the School 
+                        of Engineering's honor society, and Eta Kappa Nu, the Electrical 
+                        Engineering honor society. Junior year admission is highly 
+                        selective: Tau Beta Pi invites only the top 12.5% of the 
+                        entire engineering class, while Eta Kappa Nu selects the 
+                        top 20% of electrical-engineering students.
                     </p>
                 </div>
                 <div className="about-img-text-container Light">
@@ -201,7 +208,6 @@ const AboutBody = () => {
                         </a>
 
                         &nbsp;
-                        <br/><br/>
 
                         On my team, I took on the role as the programmer and we 
                         became team 4478D.
@@ -310,6 +316,13 @@ const AboutBody = () => {
                         for their future and will participate with both a high level 
                         of integrity and good sportsmanship, believing they can achieve 
                         what they set out to achieve through their diligence"
+                    </p>
+                </div>
+                <div className="about-img-text-container Dark">
+                    <p>
+                        At the end of the season, our team was 
+                        <strong> ranked #9 in the world </strong> 
+                        out of 20,000+ teams.
                     </p>
                 </div>
             </FadeInSection>
