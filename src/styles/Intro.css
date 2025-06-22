@@ -33,7 +33,7 @@
 }
 
 .intro-image-container img {
-    max-width: 70%;
+    max-width: 80%;
     height: auto;
     border-radius: 8px;
 }
@@ -57,6 +57,9 @@
     .intro-image-container {
         margin-bottom: 2rem;
         text-align: center;
+    }
+    .intro-image-container img {
+        max-width: 90%;
     }
 }
 

@@ -30,10 +30,7 @@ const Intro = () => {
             </div>
 
             <div className="intro-image-container">
-                <img
-                src="/about/aidan_in_garden_cropped.jpg"
-                alt="Aidan in Garden"
-                />
+                <img src="/about/aidan_in_garden_cropped.jpg" alt="Aidan in Garden" />
             </div>
         </div>
     );

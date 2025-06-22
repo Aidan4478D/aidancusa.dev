@@ -1,6 +1,6 @@
 # Aidan Cusa’s Personal Website
 
-Live -> [**aidancusa.dev**](https://aidancusa.dev)
+Live -> [**www.aidancusa.dev**](https://aidancusa.dev)
 
 A continuously‑evolving portfolio where I showcase projects, write about what I’m learning, and experiment with front‑end tooling.
 
@@ -11,8 +11,8 @@ A continuously‑evolving portfolio where I showcase projects, write about what 
 | Year     | Highlights                                                                                               |
 | -------- | -------------------------------------------------------------------------------------------------------- |
 | **2022** | First launch – pure HTML & CSS (see `old_site/`)                                                         |
-| **2023** | Vanilla JS overhaul: smoother scrolling, interactive menus                                               |
-| **2024** | Migrated to **React**; added routing, dark‑mode, CI/CD                                                   |
+| **2023** | Vanilla JS overhaul, smoother scrolling, interactive menus                                               |
+| **2024** | Migrated to React, added routing, better organization, & CI/CD                                                   |
 | **2025** | Current redesign focused on cleaner UI/UX, accessibility, and performance (React 19, Tailwind CSS)       |
 
 ---
@@ -22,5 +22,3 @@ A continuously‑evolving portfolio where I showcase projects, write about what 
 Folow tutorial here to set up React App with GitHub Pages: https://github.com/gitname/react-gh-pages
 
 Then run `$ npm run deploy -- -m "Commit message to pages"` to deploy the React App onto www.aidancusa.dev domain
-
-Then make sure that `CNAME` is included on the `gh-pages` branch with the correct domain name.
