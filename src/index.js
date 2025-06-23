@@ -8,14 +8,15 @@ import App from './App';
 import AboutPage from "./pages/AboutPage"
 import ContactPage from "./pages/ContactPage"
 import PortfolioPage from "./pages/PortfolioPage"
-
 import ProjectPage from './pages/projects/ProjectPage';
+import ScrollToTop from './components/general/ScrollToTop.js'
 
 import { HashRouter, Routes, Route, Navigate } from "react-router-dom"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <HashRouter>
+        <ScrollToTop />
         <Routes>
 
             <Route path="/index.html" element={<Navigate to="/" replace />} />
