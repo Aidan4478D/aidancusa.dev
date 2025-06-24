@@ -63,6 +63,7 @@ export default function ProjectPage() {
 
             <ProjectNavigation />
 
+            <i> <p style={{ textAlign: 'center' }}> {project.year} </p> </i>
             <div className="project-page-container">
                 <div className="project-content-block">
                     <img src={project.src} alt={project.caption} className="project-page-image" />
