@@ -10,8 +10,16 @@
 }
 
 .project-page-image {
-    width: auto;
-    height: 250px;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto 1rem;
     display: block;
+}
+
+@media (min-width: 768px) {
+    .project-page-image {
+        height: 250px;
+        width: auto;
+        max-width: 90%;
+    }
 }
