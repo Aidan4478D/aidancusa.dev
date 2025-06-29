@@ -22,7 +22,7 @@ const Intro = () => {
                     enrolled in the dual Bachelor's-Master's program. My experience spans 
                     front- and back-end software development, firmware, computer and 
                     data engineering, machine-learning engineering, and data analytics. 
-                    I focus on applied artificial intelligence and the designing reliable, 
+                    I focus on applied artificial intelligence and designing reliable, 
                     efficient intelligent systems.
                 </p>
 

@@ -13,8 +13,9 @@
     flex-direction: column;
 }
 
-.contact-form h2 {
+.contact-form h1 {
     margin-bottom: 1rem;
+    color: #002f56;
     text-align: center;
 }
 
