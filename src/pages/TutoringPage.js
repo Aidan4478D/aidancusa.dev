@@ -6,7 +6,7 @@ import Footer from '../components/general/Footer.js'
 
 const TutoringPage = () => {
     return (
-        <div>
+        <div className="page-container">
             <Header />
             <br/><br/><br/>
             <center> <h1> Sorry this page is currently under construction. </h1> </center>

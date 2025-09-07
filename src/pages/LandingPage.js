@@ -11,7 +11,7 @@ import LandingActions from '../components/home/LandingActions.js'
 
 const LandingPage = () => {
     return (
-        <div>
+        <div className="page-container">
             <Header />
             <Intro />
             <LandingActions />

@@ -1,13 +1,12 @@
 footer {
-    background-color: #002F56;
-    color: #fff;
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    position: relative;
-    justify-content: center; /* Aligns children (including buttons container) to the center horizontally */
-    align-items: center; /* Aligns children to the center vertically */
-    min-height: 100%;
+  background-color: #002F56;
+  color: #fff;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;   /* pushes footer to bottom */
 }
 
 .footer-container-nav {

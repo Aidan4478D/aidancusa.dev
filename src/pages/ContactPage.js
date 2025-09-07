@@ -7,7 +7,7 @@ import ContactForm from '../components/contact/ContactForm.js'
 
 const ContactPage = () => {
     return (
-        <div>
+        <div className="page-container">
             <Header />
             <main style={{ paddingTop: '1rem' }}>
                 <ContactForm />

@@ -9,6 +9,8 @@ import AboutPage from "./pages/AboutPage"
 import ContactPage from "./pages/ContactPage"
 import PortfolioPage from "./pages/PortfolioPage"
 import ProjectPage from './pages/projects/ProjectPage';
+import DataVisPage from './pages/DataVisPage';
+
 import ScrollToTop from './components/general/ScrollToTop.js'
 
 import { HashRouter, Routes, Route, Navigate } from "react-router-dom"
@@ -18,13 +20,12 @@ root.render(
     <HashRouter>
         <ScrollToTop />
         <Routes>
-
             <Route path="/index.html" element={<Navigate to="/" replace />} />
-
             <Route path="/" element={<App />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/datavis" element={<DataVisPage />} />
             <Route path="/projects/:projectId" element={<ProjectPage />} />
         </Routes>
     </HashRouter>

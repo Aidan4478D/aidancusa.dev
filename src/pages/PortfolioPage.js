@@ -9,7 +9,7 @@ import Socials from '../components/home/Socials.js'
 
 const PortfolioPage = () => {
     return (
-        <div>
+        <div className="page-container">
             <Header />
             <br/><br/><br/>
             <Slideshow />

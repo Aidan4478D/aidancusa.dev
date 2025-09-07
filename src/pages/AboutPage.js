@@ -8,7 +8,7 @@ import AboutBody from '../components/about/AboutBody.js'
 
 const AboutPage = () => {
     return (
-        <div>
+        <div className="page-container">
             <Header />
             <AboutBody />
             <Footer />
