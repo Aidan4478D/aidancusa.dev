@@ -13,7 +13,7 @@ export default function Project11Content() {
                 Experimentation with PyTorch, I decided to develop a caption 
                 validator. This is a multimodal model, meaning that it integrates
                 and processes multiple types of data. In this case, both image
-                and textual data is used during training and inference.
+                and textual data are used during training and inference.
 
             </p>
             <p>
@@ -26,7 +26,7 @@ export default function Project11Content() {
                 the website <a href="https://flickr.com">flickr.com</a>. In my model, I was planning to fine-tune 
                 existing image processing and text models, so I just needed a subset 
                 of this dataset. I experimented with a variety of sample sizes, but 
-                I ended up choosing a size of 2000 randomly selected samples, as I feel like
+                I ended up choosing a size of 2000 randomly selected samples, as I felt like
                 this was enough for the model to "learn" while keeping the
                 training cost low in terms of time and Google Colab compute units.
 

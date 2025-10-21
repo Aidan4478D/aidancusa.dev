@@ -9,11 +9,9 @@ const NYCBuildingMapPage = () => {
     return (
         <div className="page-container">
         <Header />
-        <br /><br />
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <BuildingMap />
-        </div>
-        <br /><br />
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <BuildingMap />
+            </div>
         </div>
     );
 };
