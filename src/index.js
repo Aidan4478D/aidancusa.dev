@@ -9,7 +9,8 @@ import AboutPage from "./pages/AboutPage"
 import ContactPage from "./pages/ContactPage"
 import PortfolioPage from "./pages/PortfolioPage"
 import ProjectPage from './pages/projects/ProjectPage';
-import DataVisPage from './pages/DataVisPage';
+import DataVisPage from './pages/datavis/DataVisPage';
+import NYCBuildingMapPage from './pages/datavis/NYCBuildingMapPage';
 
 import ScrollToTop from './components/general/ScrollToTop.js'
 
@@ -25,8 +26,9 @@ root.render(
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
-            <Route path="/datavis" element={<DataVisPage />} />
             <Route path="/projects/:projectId" element={<ProjectPage />} />
+            <Route path="/datavis/turkey" element={<DataVisPage />} />
+            <Route path="/datavis/nyc_buildings_map" element={<NYCBuildingMapPage />} />
         </Routes>
     </HashRouter>
 );

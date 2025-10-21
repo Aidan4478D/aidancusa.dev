@@ -1,0 +1,16 @@
+#map {
+  position: relative;
+}
+
+.d3-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.d3-points circle {
+  stroke: #222;
+  stroke-width: 0.3px;
+  pointer-events: none;
+}
+
