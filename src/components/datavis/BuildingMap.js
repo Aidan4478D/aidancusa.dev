@@ -242,11 +242,23 @@ const BuildingMap = () => {
 
     return (
         <div className="map-shell" style={{ height: `calc(100vh - ${headerOffset}px)` }}>
-            {/* The map-root must be a sibling of the tooltip for this CSS to work */}
             <div ref={mapRef} className="map-root" />
             <div ref={tooltipRef} className="tooltip" />
+
+            <div className="map-legend">
+            <div className="legend-row">
+                <span className="legend-swatch legend-green" /> New Building
+            </div>
+            <div className="legend-row">
+                <span className="legend-swatch legend-yellow" /> Alteration
+            </div>
+            <div className="legend-row">
+                <span className="legend-swatch legend-red" /> Demolition
+            </div>
+            </div>
         </div>
     );
+
 };
 
 export default BuildingMap;
