@@ -2,10 +2,12 @@
 import React from 'react';
 import '../../../styles/ProjectContent.css';
 
+
+// this is gonna be the compiler
 export default function Project13Content() {
     return (
         <div className = "project-content-box">
-            <h2>ASCII Tetris</h2>
+            <h2>C99-Compiler</h2>
             <p>
                 This terminal tetris game was made for my final project in
                 ECE160 - Programming for Electrical Engineers during the 

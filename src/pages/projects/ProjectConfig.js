@@ -85,13 +85,20 @@ const PROJECTS = [
         //path: '/projects/12',
         //year: 'Junior Year Project'
     //},
-    //{
-        //id: 13,
-        //caption: 'C99 Compiler',
-        //src: '/projects/compiler_tiny.png',
-        //path: '/projects/13',
-        //year: 'Junior Year Project'
-    //},
+    // {
+    //     id: 13,
+    //     caption: 'C99 Compiler',
+    //     src: '/projects/compiler_tiny.png',
+    //     path: '/projects/13',
+    //     year: 'Junior Year Project'
+    // },
+    {
+        id: 14,
+        caption: 'Environmental Impact of AI Models',
+        src: '/projects/project14/ethics_waterfall.png',
+        path: '/projects/14',
+        year: 'Junior Year Project'
+    },
 ];
 
 export default PROJECTS;

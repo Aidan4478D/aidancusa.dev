@@ -21,6 +21,7 @@ import Project10Content from './content/Project10Content';
 import Project11Content from './content/Project11Content';
 //import Project12Content from './content/Project12Content';
 //import Project13Content from './content/Project13Content';
+import Project14Content from './content/Project14Content';
 
 const CONTENT_MAP = {
     1: Project1Content,
@@ -36,6 +37,7 @@ const CONTENT_MAP = {
     11: Project11Content,
     //12: Project12Content,
     //13: Project13Content,
+    14: Project14Content,
 };
 
 export default function ProjectPage() {
