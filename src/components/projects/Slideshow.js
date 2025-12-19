@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import PROJECTS from '../../pages/projects/ProjectConfig';
 import '../../styles/ProjectSlideshow.css';
 
-const SELECTED_IDS = [1, 4, 10, 11, 12];
+const SELECTED_IDS = [1, 4, 10, 11, 13];
 
 export default function Slideshow() {
     // only include selected projects

@@ -85,13 +85,13 @@ const PROJECTS = [
         //path: '/projects/12',
         //year: 'Junior Year Project'
     //},
-    // {
-    //     id: 13,
-    //     caption: 'C99 Compiler',
-    //     src: '/projects/compiler_tiny.png',
-    //     path: '/projects/13',
-    //     year: 'Junior Year Project'
-    // },
+    {
+        id: 13,
+        caption: 'C99 Compiler',
+        src: '/projects/compiler_tiny.png',
+        path: '/projects/13',
+        year: 'Junior Year Project'
+    },
     {
         id: 14,
         caption: 'Environmental Impact of AI Models',
@@ -99,6 +99,27 @@ const PROJECTS = [
         path: '/projects/14',
         year: 'Junior Year Project'
     },
+    // {
+    //     id: 15,
+    //     caption: 'Sparse Autoencoder',
+    //     // src: '/projects/project15/--------------',
+    //     path: '/projects/15',
+    //     year: 'Senior Year Project'
+    // },
+    // {
+    //     id: 16,
+    //     caption: 'Dear Address',
+    //     // src: '/projects/project15/--------------',
+    //     path: '/projects/16',
+    //     year: 'Senior Year Project'
+    // },
+    // {
+    //     id: 17,
+    //     caption: 'Multi-headed attention Transformer',
+    //     // src: '/projects/project15/--------------',
+    //     path: '/projects/17',
+    //     year: 'Senior Year Project'
+    // },
 ];
 
 export default PROJECTS;
