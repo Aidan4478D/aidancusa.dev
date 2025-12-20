@@ -23,9 +23,9 @@ const COLUMNS = [
         link: '/projects/7',
     },
     {
-        title: 'Personal Projects',
-        imgSrc: 'projects/music_producing_cropped.jpg',
-        description: 'My personal interest projects!',
+        title: 'Senior Year',
+        imgSrc: 'projects/senior_da_wall_cropped.png',
+        description: 'Senior capstone, deep learning, data visualization, environmental initiative, and more.',
         link: '/projects/15',
     },
 ];
