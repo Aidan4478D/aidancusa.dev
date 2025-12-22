@@ -1,13 +1,15 @@
 footer {
-  background-color: #002F56;
-  color: #fff;
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: auto;   /* pushes footer to bottom */
+    background-color: #002F56;
+    color: #fff;
+    width: 100%;
+    min-height: 60px;   /* or whatever looks right */
+    padding: 16px 0;    /* adds consistent breathing room */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
 }
+
 
 .footer-container-nav {
     display: flex;
@@ -44,7 +46,7 @@ footer {
   }
 
   /* Make nav links wrap and center */
-  .footer-conatiner-nav {
+  .footer-container-nav {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;           /* full width on mobile */
