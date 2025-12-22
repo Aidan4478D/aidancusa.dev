@@ -1,4 +1,3 @@
-// src/pages/projects/content/Project1Content.js
 import React from 'react';
 import '../../../styles/ProjectContent.css';
 
@@ -19,20 +18,34 @@ export default function Project13Content() {
                 The compiler targets GNU Assembler (GAS) syntax and supports a wide range of core C features,
                 including structured control flow (<code>if</code>, <code>while</code>, <code>for</code>),
                 pointer arithmetic, function calls, and aggregate data types such as structs and unions.
-                Its architecture follows a classical three-stage design: Frontend, Intermediate Representation (IR),
-                and Backend. This allows each phase to focus on a well-defined responsibility while remaining
-                modular and extensible.
+                Its architecture follows a classical front-end/back-end design. The components within 
+                each are shown in the block diagram below. Typically, compilers include a "middle-end" in
+                between the front and back ends, optimizing the intermediate representation to make 
+                assembly more efficient. Due to this compiler being completed as a part of a 15-week 
+                course, there was practically no optimization done on the front-end IR as the primary
+                purpose of the project was functionality.
+            </p>
+
+            <div className="image-gallery">
+                <div className="gallery-item-full-wide">
+                    <img src="/projects/project13/compiler_flowchart3.png" alt="Compiler Pipeline Block Diagram" />
+                    <div className="gallery-caption">Compiler Block Diagram</div>
+                </div>
+            </div>
+
+            <p>
+                For the purpose of explanation, the following code will be examined throughout 
+                the compilation stages. For more examples and testing, you can clone my 
+                compiler here: <a href="https://github.com/Aidan4478D/ECE466/tree/main/codegen"> Github repository</a>.
             </p>
 
             <div className="image-gallery">
                 <div className="gallery-item-wide">
-                    {/* TODO: Save the Mermaid block diagram I generated for you as an image 
-                       (e.g., using mermaid.live) and save it to public/projects/project13/compiler-pipeline.png 
-                    */}
-                    <img src="/projects/project13/compiler-pipeline.png" alt="Compiler Pipeline Block Diagram" />
-                    <div className="gallery-caption">Compiler Pipeline Architecture</div>
+                    <img src="/projects/project13/compiler_code_example.png" alt="C Code to Quads Transformation" />
+                    <div className="gallery-caption">Compiler Quad Generation</div>
                 </div>
             </div>
+
 
             <h3> <u> Frontend </u> </h3>
             <p>
@@ -53,19 +66,23 @@ export default function Project13Content() {
                 validated representation of the program’s meaning.
             </p>
 
-
-            <h3> <u> Intermediate Representation </u> </h3>
+            <div className="image-gallery">
+                <div className="gallery-item-wide">
+                    <img src="/projects/project13/compiler_ast_outcome.png" alt="Compiler Abstract Syntax Tree Output" />
+                    <div className="gallery-caption">Compiler Pipeline Architecture</div>
+                </div>
+            </div>
+    
             <p>
                 Once the AST has been built, the compiler converts it into an <strong>Intermediate 
                 Representation (IR)</strong>. Rather than translating directly to
                 assembly, the program is decomposed into <strong>Three-Address Code</strong>, represented
                 internally as <em>quads</em>. Each quad expresses a single, simple operation with at most
                 three operands, making complex expressions easier to reason about and transform.
-                For example, an expression such as <code>a = b + c * d</code> is broken into multiple
+                For example, an expression such as: <code>a = b + c * d</code> is broken into multiple
                 steps that explicitly capture evaluation order. This design simplifies later stages of
                 code generation and mirrors the internal representations used by real-world compilers.
-            </p>
-            <p>
+
                 Quads are grouped into <strong>Basic Blocks</strong> and linked together to form a <strong>Control 
                 Flow Graph (CFG)</strong>. This representation makes the flow of execution
                 explicit, particularly for conditionals, loops, and function calls. At this point, the
@@ -73,12 +90,9 @@ export default function Project13Content() {
             </p>
     
             <div className="image-gallery">
-                <div className="gallery-item">
-                    {/* TODO: Create a screenshot/image showing a snippet of C code on the left 
-                       and the resulting Quads/IR on the right. Save to public/projects/project13/quads-example.png 
-                    */}
-                    <img src="/projects/project13/quads-example.png" alt="C Code to Quads Transformation" />
-                    <div className="gallery-caption">Source Code to Intermediate Representation</div>
+                <div className="gallery-item-wide">
+                    <img src="/projects/project13/compiler_quad_outcome.png" alt="C Code to Quads Transformation" />
+                    <div className="gallery-caption">Compiler Quad Generation</div>
                 </div>
             </div>
 
@@ -104,10 +118,7 @@ export default function Project13Content() {
 
             <div className="image-gallery">
                 <div className="gallery-item-wide">
-                    {/* TODO: Create an image showing the final generated x86 assembly code.
-                       Save to public/projects/project13/assembly-output.png 
-                    */}
-                    <img src="/projects/project13/assembly-output.png" alt="Final x86 Assembly Output" />
+                    <img src="/projects/project13/compiler_assembly_outcome.png" alt="Final x86 Assembly Output" />
                     <div className="gallery-caption">Generated x86-32 Assembly</div>
                 </div>
             </div>

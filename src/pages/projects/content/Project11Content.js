@@ -70,7 +70,7 @@ export default function Project11Content() {
                 out the model architecture in the image below!
 
                 <div className="image-gallery">
-                    <div className="gallery-item-wide">
+                    <div className="gallery-item-full-wide">
                         <img src="/projects/project11/pytorch-model-architecture.png" alt="Model Architecture" />
                         <div className="gallery-caption">Multimodal Caption Verifier Model Architecture</div>
                     </div>
