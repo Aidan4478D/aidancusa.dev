@@ -64,7 +64,7 @@ const AboutBody = () => {
                         At The Cooper Union, my passion for electrical engineering 
                         and computer science 
                         has grown through rigorous coursework and hands-on projects. 
-                        I currently hold a 4.00 major GPA and a 3.77 overall GPA. 
+                        I currently hold a 4.00 major GPA and a 3.78 overall GPA. 
                         I'm enrolled in the dual-degree Bachelor’s and Master’s of 
                         Engineering program in Electrical Engineering, with a minor 
                         in Computer Science. Over the past three years, I've collaborated 
@@ -80,62 +80,87 @@ const AboutBody = () => {
 
             <br/> <br/>
             <FadeInSection>
-                <div class="rc-table">
-                    <table>
-                        <tr>
-                            <td>
-                                <h2> Relevant Coursework </h2>
-                                <span> (*) Denotes ECE Course </span> <br/>
-                                <span> (**) Denotes Graduate ECE Course </span>
-                            </td>
-                            <td>
-                                <h3>Junior Year</h3>
-                                <ul>
-                                    <li>** Frequentist Machine Learning </li>
-                                    <li>** Natural Language Processing </li>
-                                    <li>** Generative Machine Learning </li>
-                                    <li>** Experimentation with PyTorch </li>
-                                    <li>** Compilers </li>
-                                    <li>* Communication Networks </li>
-                                    <li>* Computer Operating Systems </li>
-                                    <li>* Prob. Models & Stochastic Processes </li>
-                                    <li>* Digital Signal Processing </li>
-                                    <li>* Electronics II </li>
-                                    <li> Discrete Mathematics </li>
-                                    <li> Engineering Management </li>
-                                    <li> Finance </li>
-                                </ul>
-                            </td>
-                            <td>
-                                <h3>Sophomore Year</h3>
-                                <ul>
-                                    <li>* Software Engineering</li>
-                                    <li>* Computer Architecture</li>
-                                    <li>* Data Structures and Algorithms II</li>
-                                    <li>* Circuit Analysis</li>
-                                    <li>* Signal Processing</li>
-                                    <li>* Electronics I</li>
-                                    <li>Vector Calculus</li>
-                                    <li>Partial & Ordinary Differential Equations</li>
-                                    <li>Probability</li>
-                                    <li>Physics II & III</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <h3>Freshman Year</h3>
-                                <ul>
-                                    <li>* Programming for EEs</li>
-                                    <li>* Data Structures and Algorithms I</li>
-                                    <li>* Digital Logic Design</li>
-                                    <li>Calculus I & II</li>
-                                    <li>Introduction to Linear Algebra</li>
-                                    <li>Physics Mechanics</li>
-                                    <li>General Chemistry</li>
-                                    <li>Engineering Design & Problem Solving</li>
-                                    <li>Engineering Graphics (Drafting)</li>
-                                </ul>
-                            </td>
-                        </tr>
+                <div className="rc-table">
+                <table>
+                    <thead>
+                    <tr>
+                        {/* Title/legend spans all year columns */}
+                        <th colSpan="4" className="rc-header-cell">
+                            <h2>Relevant Coursework</h2>
+                            <div className="rc-legend">
+                                <span>(*) Denotes ECE Course</span>
+                                <span>(**) Denotes Graduate ECE Course</span>
+                            </div>
+                        </th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>
+                            <h3>Senior Year</h3>
+                            <ul>
+                                <li>** Deep Learning</li>
+                                <li>** Bayesian Machine Learning</li>
+                                <li>** Data Science for Social Good</li>
+                                <li>** Remote Sensing</li>
+                                <li>** Master's Thesis</li>
+                                <li>* Communication Theory</li>
+                                <li>* Senior Capstone</li>
+                            </ul>
+                        </td>
+
+                    <td>
+                        <h3>Junior Year</h3>
+                        <ul>
+                            <li>** Frequentist Machine Learning</li>
+                            <li>** Natural Language Processing</li>
+                            <li>** Generative Machine Learning</li>
+                            <li>** Experimentation with PyTorch</li>
+                            <li>** Compilers</li>
+                            <li>* Communication Networks</li>
+                            <li>* Computer Operating Systems</li>
+                            <li>* Prob. Models & Stochastic Processes</li>
+                            <li>* Digital Signal Processing</li>
+                            <li>* Electronics II</li>
+                            <li>Discrete Mathematics</li>
+                            <li>Engineering Management</li>
+                            <li>Finance</li>
+                        </ul>
+                    </td>
+
+                    <td>
+                    <h3>Sophomore Year</h3>
+                        <ul>
+                            <li>* Software Engineering</li>
+                            <li>* Computer Architecture</li>
+                            <li>* Data Structures and Algorithms II</li>
+                            <li>* Circuit Analysis</li>
+                            <li>* Signal Processing</li>
+                            <li>* Electronics I</li>
+                            <li>Vector Calculus</li>
+                            <li>Partial & Ordinary Differential Equations</li>
+                            <li>Probability</li>
+                            <li>Physics II & III</li>
+                        </ul>
+                    </td>
+
+                    <td>
+                        <h3>Freshman Year</h3>
+                        <ul>
+                            <li>* Programming for EEs</li>
+                            <li>* Data Structures and Algorithms I</li>
+                            <li>* Digital Logic Design</li>
+                            <li>Calculus I & II</li>
+                            <li>Introduction to Linear Algebra</li>
+                            <li>Physics Mechanics</li>
+                            <li>General Chemistry</li>
+                            <li>Engineering Design & Problem Solving</li>
+                            <li>Engineering Graphics (Drafting)</li>
+                        </ul>
+                        </td>
+                    </tr>
+                    </tbody>
                     </table>
                 </div>
             </FadeInSection>

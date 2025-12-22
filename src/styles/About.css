@@ -167,6 +167,23 @@
     margin-bottom: 10px; /* Space below the header */
 }
 
+.rc-table table th.rc-header-cell {
+    padding: 0 20px 20px 20px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.rc-legend {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    color: #333;
+    font-size: 0.95em;
+}
+
+
 @media screen and (max-width: 768px) {
     .rc-table table {
         /* Treat the table as a block‐level container */
