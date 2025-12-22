@@ -191,15 +191,37 @@ const AboutBody = () => {
                 </div>
                 <div className="about-img-text-container Light">
                     <p>
-                        I hold two part-time positions on campus as a Student
-                        Manager at Brooks Lab Computer Center and as a Group Tour
-                        Guide for the Albert Nerken School of Engineering. In 
-                        addition to these jobs, I often work temporary jobs for 
-                        the school such as a technician for the 2024 job fair,
-                        an organizer for the End of the Year Show, and a Campus 
-                        Orientation Guide for incoming freshmen!
+                        On campus, I am a Student Manager at Brooks Lab Computer Center,
+                        helping Professors and Students with any IT related issues. 
+                        I have also held many part time jobs such as a Group Tour
+                        Guide for the Albert Nerken School of Engineering, a technician 
+                        for the 2024 job fair, an organizer for the End of the Year 
+                        Show, a Campus Orientation Guide and an Admitted Students day Guide 
+                        for incoming freshmen!
+                    
+                        <br/><br/>            
+
+                        Additionally, in the Fall 2025 semester, Julia Solines and I and co-taught Cooper 
+                        Union's CS101 course, teaching classes about data visualization.
+                        We developed lesson plans & assignments surrounding datasets 
+                        from NYC's Open Data Portal, data cleaning, and creative visualization. By
+                        the end of the semester, the students produced meaningful posters
+                        displayed on the Cooper Union's 6th floor.
                     </p>
                     <img src="about/cooper-badminton.jpg" alt="Cooper Badminton 2023" />
+                </div>
+                <div className="about-img-text-container Dark">
+                    { /* <img src="about/igvc-photo.jpg" alt="IGVC Team Photo" /> */ }
+                    <img src="about/NUS_aidan.jpg" alt="Me in front of NUS"/>
+                    <p> 
+                        In the Summer of 2025, I was fortunate to have been selected 
+                        to study at the National Univerisyt of Singapore as a part of 
+                        Cooper Union's study abroad program. There, I worked on a project
+                        developing a middleware to seamlessly integrate robots with 
+                        existing elevators. Alongside this research, I was able to 
+                        make numerous friends and travel around Southeast-Asia, making
+                        unforgettable experiences.
+                    </p>
                 </div>
             </FadeInSection>
 
