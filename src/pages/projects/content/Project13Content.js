@@ -41,8 +41,8 @@ export default function Project13Content() {
 
             <div className="image-gallery">
                 <div className="gallery-item-wide">
-                    <img src="/projects/project13/compiler_code_example.png" alt="C Code to Quads Transformation" />
-                    <div className="gallery-caption">Compiler Quad Generation</div>
+                    <img src="/projects/project13/compiler_code_example.png" alt="C Code as an Example" />
+                    <div className="gallery-caption">Compiler Example C Code</div>
                 </div>
             </div>
 
@@ -70,7 +70,7 @@ export default function Project13Content() {
             <div className="image-gallery">
                 <div className="gallery-item-wide">
                     <img src="/projects/project13/compiler_ast_outcome.png" alt="Compiler Abstract Syntax Tree Output" />
-                    <div className="gallery-caption">Compiler Pipeline Architecture</div>
+                    <div className="gallery-caption">Resulting Abstract Syntax Tree from Example C Code ('main' function). </div>
                 </div>
             </div>
     
@@ -96,7 +96,7 @@ export default function Project13Content() {
             <div className="image-gallery">
                 <div className="gallery-item-wide">
                     <img src="/projects/project13/compiler_quad_outcome.png" alt="C Code to Quads Transformation" />
-                    <div className="gallery-caption">Compiler Quad Generation</div>
+                    <div className="gallery-caption">Quad Generation from Example C Code ('f' function).</div>
                 </div>
             </div>
 
@@ -124,7 +124,7 @@ export default function Project13Content() {
             <div className="image-gallery">
                 <div className="gallery-item-wide">
                     <img src="/projects/project13/compiler_assembly_outcome.png" alt="Final x86 Assembly Output" />
-                    <div className="gallery-caption">Generated x86-32 Assembly</div>
+                    <div className="gallery-caption">Generated x86-32 Assembly ('main' function).</div>
                 </div>
             </div>
 
@@ -149,8 +149,8 @@ export default function Project13Content() {
 
             <div className="image-gallery">
                 <div className="gallery-item-full-wide">
-                    <img src="/projects/project13/compiler_compiled_outcome.png" alt="Final x86 Assembly Output" />
-                    <div className="gallery-caption">Generated x86-32 Assembly</div>
+                    <img src="/projects/project13/compiler_compiled_outcome.png" alt="Final Program Output." />
+                    <div className="gallery-caption">Terminal Output of Compiled Program.</div>
                 </div>
             </div>
             
