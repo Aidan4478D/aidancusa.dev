@@ -99,13 +99,13 @@ const PROJECTS = [
         path: '/projects/14',
         year: 'Junior Year Project'
     },
-    // {
-    //     id: 15,
-    //     caption: 'Sparse Autoencoder',
-    //     // src: '/projects/project15/--------------',
-    //     path: '/projects/15',
-    //     year: 'Senior Year Project'
-    // },
+    {
+        id: 15,
+        caption: 'Sparse Autoencoder',
+        src: '/projects/project15/sae_feature_activation_map.png',
+        path: '/projects/15',
+        year: 'Senior Year Project'
+    },
     // {
     //     id: 16,
     //     caption: 'Dear Address',
