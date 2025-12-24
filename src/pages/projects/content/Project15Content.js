@@ -23,70 +23,66 @@ export default function Project15Content() {
                 Here, the goal is to identify whether certain feature activations correlate to certain classes and 
                 regions in in the spiral. After the classifier converged, I froze its weights and trained a sparse 
                 autoencoder (SAE) on the classifier's last hidden layer. The SAE projects the
-                hidden vector from <code>256 to 1024</code>, applies a <code>ReLU</code>, and then projects back down
-                <code>1024 → 256</code>. 
+                hidden vector from <code>256 to 1024</code>, applies a <code>ReLU</code>, and then projects back 
+                down <code>1024 to 256</code>. 
                 
                 The SAE objective is a combination of (1) reconstruction error (so the decoded hidden state stays close 
                 to the original) and (2) an <code>L1</code> penalty on the sparse activations (to induce sparsity).
             </p>
 
             <div className="image-gallery">
-                <div className="gallery-item-wide">
-                    <img src="/projects/project15/sae_pipeline.png" alt="Sparse autoencoder attached to an MLP hidden layer" />
+                <div className="gallery-item-full-wide">
+                    <img src="/projects/project15/sae_flowchart.png" alt="Sparse autoencoder attached to an MLP hidden layer" />
                     <div className="gallery-caption">
-                        Pipeline: train an MLP classifier → freeze it → train an SAE on the last hidden layer (256→512→256) with an L1 sparsity penalty.
+                        SAE training pipeline. Train MLP classifier -> freeze it -> train an SAE on the last hidden layer (256->1024->256) -> analyze results.
                     </div>
                 </div>
             </div>
 
-            <h3>Background: Why Sparsity Can Create Interpretability</h3>
             <p>
-                In a typical MLP, hidden units are dense and “distributed”: many neurons contribute a little to many concepts.
-                Sparse autoencoders aim to instead learn a dictionary of features where each input activates only a few
-                components. When this works well, individual features often align with recognizable patterns in the input space
-                (or recognizable “concepts” in a language model setting). In this project, sparsity is enforced by applying
-                a <code>ReLU</code> gate (non-negativity) and an <code>L1</code> penalty that encourages most activations
+                In a typical MLP, hidden units are dense and "distributed," meaning that many neurons (features) contribute a 
+                little to many concepts or ideas.
+
+                Sparse autoencoders aim to instead learn a "dictionary of features" where each input activates only a few
+                features. When this works well, individual features often align with recognizable patterns in the input space
+                (or recognizable "concepts" in a language model setting). In this project, sparsity is enforced by applying
+                a <code>ReLU</code> activation function and an <code>L1</code> penalty that encourages most activations
                 to be near zero.
             </p>
 
-            <h3>Method: Overcomplete SAE on a Text-Classifier-Style MLP Layer</h3>
             <p>
                 Although the paper focuses on language model activations, the same structure can be applied to any learned
-                representation. Here, the “representation” is the MLP’s last hidden layer. The SAE’s job is to reconstruct that
-                hidden vector while using as few active features as possible. This is the same basic strategy you would use in a
-                text classifier: train the classifier normally, then train an SAE on the classifier’s internal layer activations
-                to discover what internal features are being used for decisions.
-            </p>
+                representation. Here, the "representation" is the MLP's last hidden layer in classifying data points spatially
+                within a spiral. The SAE's job is then to reconstruct that hidden vector while using as few active features as possible. 
 
-            <h3>Dimensionality: What Must Be True for Useful Monosemantic Features</h3>
-            <p>
-                A key design choice is the size of the sparse layer (the “dictionary size”). Making the SAE layer
-                <strong>overcomplete</strong> (more features than the hidden dimension) gives the model room to separate factors
+                A key design choice is the size of the sparse layer (the "dictionary size"). Making the SAE layer
+                overcomplete (higher dimensionality than the MLP hidden dimension) gives the model room to separate factors
                 of variation into different directions. However, interpretability only becomes meaningful if the dataset provides
-                enough coverage to “identify” these features. In practice:
+                enough coverage to "identify" these features. In practice:
             </p>
-            <ul>
+            <ul style={{textAlign:'left'}}>
                 <li>
-                    If the sparse layer is <strong>too small</strong>, features are forced to be reused (high polysemanticity),
+                    If the sparse layer's dimensionality is too small, features are forced to be reused (high polysemanticity),
                     and the SAE behaves more like a compression bottleneck than a feature dictionary.
                 </li>
                 <li>
-                    If the sparse layer is <strong>too large</strong> relative to the dataset, many features become
-                    <strong>dead</strong> (never activate) or activate too rarely to be reliably interpreted.
+                    If the sparse layer's dimensionality is too large relative to the dataset, many features become
+                    dead (never activate) or activate too rarely to be reliably interpreted.
                 </li>
                 <li>
-                    For monosemanticity to hold, you generally want a regime where the dataset has enough diverse examples that
+                    For monosemanticity to hold, you generally want a system where the dataset has enough diverse examples that
                     each useful feature activates across many inputs (or at least across enough inputs to distinguish it from noise),
                     while sparsity keeps features separated rather than entangled.
                 </li>
             </ul>
 
-            <h3>Results: Sparsity, Active Features, and Decision Boundary Fidelity</h3>
+            {/* maybe put diagram showing this here? */}
+
             <p>
-                With a high sparsity weight (<code>L1 λ = 50</code>) and a <code>512</code>-dimensional sparse layer, the SAE learned
-                a representation where only a small fraction of features meaningfully activate. In my run, only about
-                <strong>~49 features</strong> were active while the rest were effectively dead or negligible. This is a sign that the
-                sparsity penalty successfully pushed the model into a “few-features-on” regime, at the cost of some reconstruction
+                With a high sparsity weight (<code>L1 lambda = 50</code>) and a <code>1024</code> dimensional sparse layer, the SAE learned
+                a representation where only a small fraction of features meaningfully activate. In my SAE, only about
+                ~49 features were active while the rest were effectively dead or negligible. This is a sign that the
+                sparsity penalty successfully pushed the model into a "few-features-on" regime, at the cost of some reconstruction
                 accuracy. Qualitatively, the classifier’s decision boundary computed through the SAE remained close to the original
                 MLP boundary, with slight deviations near the ends of the spirals—consistent with trading reconstruction fidelity for
                 higher sparsity.
@@ -94,9 +90,9 @@ export default function Project15Content() {
 
             <div className="image-gallery">
                 <div className="gallery-item-wide">
-                    <img src="/projects/project15/decision_boundary_compare.png" alt="Original vs SAE decision boundary comparison" />
+                    <img src="/projects/project15/sae_decision_boundary_compare.png" alt="Original vs SAE decision boundary comparison" />
                     <div className="gallery-caption">
-                        Original MLP decision boundary vs. the decision boundary when routing through the SAE (sanity check that the SAE preserves useful structure).
+                        Original MLP decision boundary vs. the decision boundary when routing through the SAE. Green line is the SAE boundary.
                     </div>
                 </div>
             </div>
