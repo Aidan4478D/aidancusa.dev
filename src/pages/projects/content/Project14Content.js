@@ -142,7 +142,7 @@ export default function Project14Content() {
                 grid which uses significantly more water per kWh of electricity off-site. 
             </p>
             <div className="image-gallery">
-                <div className="gallery-item-wide">
+                <div className="gallery-item-full-wide">
                     <img src="/projects/project14/ethics_low_carbon_comparison.png" alt="Graph showing average water usage by location for T4 GPU" />
                     <div className="gallery-caption">Average Water Usage (L) on T4 GPU for SST2 by Model Type and Location</div>
                 </div>
