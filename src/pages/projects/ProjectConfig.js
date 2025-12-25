@@ -102,7 +102,7 @@ const PROJECTS = [
     {
         id: 15,
         caption: 'Sparse Autoencoder',
-        src: '/projects/project15/sae_feature_activation_map.png',
+        src: '/projects/project15/sae_top_features_max.png',
         path: '/projects/15',
         year: 'Senior Year Project'
     },

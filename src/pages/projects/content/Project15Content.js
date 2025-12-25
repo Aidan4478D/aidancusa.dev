@@ -5,7 +5,7 @@ import '../../../styles/ProjectContent.css';
 export default function Project15Content() {
     return (
         <div className="project-content-box">
-            <h2>Sparse Autoencoder Feature Discovery</h2>
+            <h2>Sparse Autoencoder Feature Analysis</h2>
 
             <p>
                 This project was inspired by Adly Templeton et al.’s <em>"Scaling Monosemanticity: Extracting Interpretable
@@ -34,7 +34,7 @@ export default function Project15Content() {
                 <div className="gallery-item-full-wide">
                     <img src="/projects/project15/sae_flowchart.png" alt="Sparse autoencoder attached to an MLP hidden layer" />
                     <div className="gallery-caption">
-                        SAE training pipeline. Train MLP classifier -> freeze it -> train an SAE on the last hidden layer (256->1024->256) -> analyze results.
+                        SAE training and analysis pipeline.
                     </div>
                 </div>
             </div>
@@ -84,8 +84,7 @@ export default function Project15Content() {
                 ~49 features were active while the rest were effectively dead or negligible. This is a sign that the
                 sparsity penalty successfully pushed the model into a "few-features-on" mode, at the cost of some reconstruction
                 accuracy. Qualitatively, the classifier’s decision boundary computed through the SAE remained close to the original
-                MLP boundary, with slight deviations near the ends of the spirals—consistent with trading reconstruction fidelity for
-                higher sparsity.
+                MLP boundary, with slight deviations near the ends of the spirals.
             </p>
 
             <div className="image-gallery">
