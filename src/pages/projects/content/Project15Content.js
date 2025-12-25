@@ -82,7 +82,7 @@ export default function Project15Content() {
                 With a high sparsity weight (<code>L1 lambda = 50</code>) and a <code>1024</code> dimensional sparse layer, the SAE learned
                 a representation where only a small fraction of features meaningfully activate. In my SAE, only about
                 ~49 features were active while the rest were effectively dead or negligible. This is a sign that the
-                sparsity penalty successfully pushed the model into a "few-features-on" regime, at the cost of some reconstruction
+                sparsity penalty successfully pushed the model into a "few-features-on" mode, at the cost of some reconstruction
                 accuracy. Qualitatively, the classifier’s decision boundary computed through the SAE remained close to the original
                 MLP boundary, with slight deviations near the ends of the spirals—consistent with trading reconstruction fidelity for
                 higher sparsity.
@@ -97,58 +97,58 @@ export default function Project15Content() {
                 </div>
             </div>
 
-            <h3>Interpretable Features: Activation Heatmaps</h3>
             <p>
                 To inspect interpretability, I visualized individual SAE features by evaluating their activation over a 2D grid
                 and plotting a heatmap. These plots show where in input space a given feature activates strongly. Several features
-                displayed clear geometric structure (localized “regions” of activation) rather than random noise. In particular,
-                a small set of features dominated classification behavior—especially features such as <strong>360</strong>,
-                <strong>366</strong>, and <strong>481</strong>, which appeared to align with meaningful portions of the spiral structure.
+                displayed clear geometric structure (localized "regions" of activation) rather than random noise. In particular,
+                a small set of features dominated classification behavior, especially features such as 360,
+                366, and 481, which appeared to align with meaningful portions of the spiral structure. Shown below is a grid of 
+                the top SAE feature activations, sorted by max activation.
             </p>
 
             <div className="image-gallery">
                 <div className="gallery-item-wide">
-                    <img src="/projects/project15/sparse_features_top.png" alt="Grid of top SAE feature activation heatmaps" />
+                    <img src="/projects/project15/sae_top_features_max.png" alt="Grid of top SAE feature activation heatmaps" />
                     <div className="gallery-caption">
-                        A grid of the most active SAE features (heatmaps). Brighter regions indicate stronger activation; points are overlaid for reference.
+                        A grid of the most active SAE features (heatmaps). Brighter regions indicate stronger activation. Points are overlaid for reference.
                     </div>
                 </div>
             </div>
 
-            <h3>Feature Intervention: Boosting vs. Degrading a Single Feature</h3>
             <p>
                 Following the intervention style used in the Anthropic paper, I tested whether an individual feature causally
-                influences the classifier. I selected feature <strong>366</strong> and performed two interventions:
-                (1) <strong>boost</strong> the feature activation (adding a large value) and (2) <strong>degrade</strong> the feature
-                (setting it to zero). Boosting feature 366 significantly expanded the region classified as the black spiral,
-                indicating that this feature strongly contributes to the decision boundary. Degrading it altered the boundary
-                more subtly, suggesting redundancy: other moderately important features can partially compensate when one feature
-                is removed.
+                influences the classifier. For my analysis, I selected feature 366 and performed two interventions:
+                (1) boosting the feature activation (multiplying its activation value by 10) and (2) degrading the feature
+                (setting it to zero). As shown below on the left, boosting feature 366 significantly expanded the region classified as "the black spiral",
+                indicating that this feature strongly contributes to the decision boundary. Degrading it (shown below on the right) altered the boundary
+                more subtly, suggesting that other moderately important features can partially compensate when one feature
+                is removed. In the plots below, the blue line is the altered SAE decision boundary after boosting or degrading feature 366. 
+                The dashed green line is the original SAE boundary without boosting or degrading.
             </p>
 
             <div className="image-gallery">
                 <div className="gallery-item-wide">
-                    <img src="/projects/project15/feat366_boost.png" alt="Decision boundary after boosting SAE feature 366" />
+                    <img src="/projects/project15/sae_feat366_boost.png" alt="Decision boundary after boosting SAE feature 366" />
                     <div className="gallery-caption">
-                        Intervention (boost): increasing feature 366 causes a noticeable shift in the decision boundary, suggesting a strong causal role.
+                        <strong>Boosting</strong> feature 366 causes a noticeable shift in the decision boundary (blue line), suggesting a strong causal role.
                     </div>
                 </div>
                 <div className="gallery-item-wide">
-                    <img src="/projects/project15/feat366_degrade.png" alt="Decision boundary after degrading SAE feature 366" />
+                    <img src="/projects/project15/sae_feat366_degrade.png" alt="Decision boundary after degrading SAE feature 366" />
                     <div className="gallery-caption">
-                        Intervention (degrade): zeroing feature 366 changes the boundary less dramatically, implying other features can compensate.
+                        <strong>Degrading</strong> (zeroing) feature 366 changes the boundary less dramatically, implying other features can compensate.
                     </div>
                 </div>
             </div>
 
-            <h3>Takeaways</h3>
             <p>
-                This experiment demonstrates the core SAE workflow from the paper in a small, interpretable setting:
-                training an overcomplete sparse layer on hidden activations produces a set of features where only a small subset
+                This experiment demonstrates the core SAE workflow from the paper in a small, interpretable setting.
+                Training an overcomplete sparse layer on hidden activations produces a set of features where only a small subset
                 are active, and some of those features exhibit clear structure and causal influence on model behavior. The results
                 also highlight a practical constraint: to get meaningful monosemantic features, the sparse dimension and sparsity
-                strength must be balanced against dataset size and diversity—too much capacity yields dead features, while too little
-                capacity forces feature entanglement.
+                strength must be balanced against dataset size and diversity. Too much capacity yields dead features, while too little
+                capacity forces feature entanglement. You can view the code for the project here:&nbsp;
+                <a href="https://github.com/Aidan4478D/ECE472/tree/main/hw07">Github repository</a>.
             </p>
         </div>
     );
