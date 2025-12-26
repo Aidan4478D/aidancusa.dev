@@ -106,13 +106,13 @@ const PROJECTS = [
         path: '/projects/15',
         year: 'Senior Year Project'
     },
-    // {
-    //     id: 16,
-    //     caption: 'Dear Address',
-    //     // src: '/projects/project15/--------------',
-    //     path: '/projects/16',
-    //     year: 'Senior Year Project'
-    // },
+    {
+        id: 16,
+        caption: 'Dear Address',
+        src: '/projects/senior_da_wall_cleaned.png',
+        path: '/projects/16',
+        year: 'Senior Year Project'
+    },
     // {
     //     id: 17,
     //     caption: 'Multi-headed attention Transformer',
