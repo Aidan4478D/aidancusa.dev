@@ -64,7 +64,7 @@ const AboutBody = () => {
                         At The Cooper Union, my passion for electrical engineering 
                         and computer science 
                         has grown through rigorous coursework and hands-on projects. 
-                        I currently hold a 4.00 major GPA and a 3.78 overall GPA. 
+                        I currently hold a 4.00 major GPA and a 3.81 overall GPA. 
                         I'm enrolled in the dual-degree Bachelor’s and Master’s of 
                         Engineering program in Electrical Engineering, with a minor 
                         in Computer Science. Over the past three years, I've collaborated 
