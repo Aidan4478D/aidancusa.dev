@@ -20,7 +20,7 @@ const AboutBody = () => {
             <FadeInSection>
                 <div className="about-img-text-container Dark">
                     <img src="about/family-photo-christmas.jpg" alt="Family Christmas" />
-                    <p> My name's Aidan, and I'm an incoming Senior at The Cooper 
+                    <p> My name's Aidan, and I'm a Senior at The Cooper 
                         Union majoring in electrical engineering! I grew up in 
                         Monroe, Connecticut and attended Masuk High School where 
                         I was an active member of the VEX Robotics team 4478D.
@@ -201,7 +201,7 @@ const AboutBody = () => {
                     
                         <br/><br/>            
 
-                        Additionally, in the Fall 2025 semester, Julia Solines and I and co-taught Cooper 
+                        Additionally, in the Fall 2025 semester, Julia Solines (Art'26) and I and co-taught Cooper 
                         Union's CS101 course, teaching classes about data visualization.
                         We developed lesson plans & assignments surrounding datasets 
                         from NYC's Open Data Portal, data cleaning, and creative visualization. By
@@ -215,7 +215,7 @@ const AboutBody = () => {
                     <img src="about/NUS_aidan.jpg" alt="Me in front of NUS"/>
                     <p> 
                         In the Summer of 2025, I was fortunate to have been selected 
-                        to study at the National Univerisyt of Singapore as a part of 
+                        to study at the National University of Singapore as a part of 
                         Cooper Union's study abroad program. There, I worked on a project
                         developing a middleware to seamlessly integrate robots with 
                         existing elevators. Alongside this research, I was able to 
