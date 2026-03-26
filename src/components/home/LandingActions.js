@@ -19,7 +19,7 @@ const ACTIONS = [
     {
         title: 'View My Resume',
         imgSrc: '/about/resume-cover.jpg',
-        link: '/2025_Fall_Aidan_Cusa_Resume.pdf',
+        link: '/2026_Spring_Aidan_Cusa_Resume.pdf',
         external: true, // opens in new tab
     },
 ];
